@@ -1,5 +1,4 @@
-# Witamy w La Défense
-
+# Witamy w La Défense!
 ![Alt text](assets/image.png)
 
 > "Obrona jest sztuką,\
