@@ -1,5 +1,6 @@
 # Witamy w La Défense!
-![Alt text](assets/image.png)
+
+<p align="center"><img src="assets/image.png" style="height: 352px;"/></p>
 
 > "Obrona jest sztuką,\
 > a sztuka nigdy nie jest łatwa."\
@@ -13,7 +14,19 @@ Polecane rozszerzenia do Visual Studio Code:
 - **LaTeX Workshop**: Rozszerzenie wspomagające pisanie wzorów matematycznych w języku LaTeX
 - **Markdown PDF**: Opcjonalne rozszerzenie umożliwiające eksport plików Markdown do PDF
 
-Markdown cheat sheet:  https://www.markdownguide.org/cheat-sheet/
+Markdown cheat sheet: https://www.markdownguide.org/cheat-sheet/
+
+Zachęcamy do dodawania informacji o źródłach (cytatów, zdjęć, schematów itp.) w celu udzielenia należytego kredytu autorom oraz zwiększenia wiarygodności.
+
+Oto przykładowe metody dodawania linków do źródeł:
+
+<p align="center"><img src="assets/apple.png" style="height: 152px;"/></p>
+
+<p align="center">
+  Komputer Apple II <a href="https://pl.wikipedia.org/wiki/Apple_II"><sup>[1]</sup></a>
+</p>
+
+Apple II – 8-bitowy komputer domowy opracowany w latach 70. XX wieku przez firmę Apple Computer (konstruktorem był Steve Wozniak). Maszyna zawierała procesor MOS 6502 firmy MOS Technology oraz 4 KB pamięci. <a href="https://pl.wikipedia.org/wiki/Apple_II"><sup>[2]</sup></a>
 
 ## Struktura projektu
 
@@ -25,15 +38,15 @@ Struktura projektu wraz z omówieniem poszczególnych elementów:
 │  ├── Z przedmiotów kierunkowych/             # sic erat scriptum
 │  │  ├── 1. Kompilacja, interpretacja.../     # Folder danego pytania
 │  │  │  ├── index.md                          # plik zawierający odpowiedź
-│  │  │  ├── kompilacja.md                     # plik wyjaśniający zagadnienie  
+│  │  │  ├── kompilacja.md                     # plik wyjaśniający zagadnienie
 │  │  │  ├── interpretacja.md                  # plik wyjaśniający zagadnienie
 │  ├── Z przedmiotów specjalnościowych/        # sic erat scriptum
 │  │  ├── ...
 ```
- 
+
 - **assets**: Zdjęcia, schematy, rysunki poglądowe oraz wszystkie inne pliki umieszczane w odpowiedzach na pytania lub w wyjaśnieniu zagadnień powinny znajdować się w katalogu odpowiadającym danemu pytaniu. Jeżeli jednak dany plik występuję w wielu odpowiedziach lub nie jest bezpośrednio związany z danym pytaniem należy umieścić go w folderze assets
 
-- **Pytania**: Katalog zawierający pytania z przedmiotów kierunkowych oraz specjalnościowych znajdujące się w odpowiednuch folderach. Każde pytanie posiada swój własny katalog zawierający wyczerpującą odpowiedź na dane pytanie (*plik index.md*) oraz możliwie przydatne wyjaśnienia zagadnień związanych z danym pytaniem.
+- **Pytania**: Katalog zawierający pytania z przedmiotów kierunkowych oraz specjalnościowych znajdujące się w odpowiednuch folderach. Każde pytanie posiada swój własny katalog zawierający wyczerpującą odpowiedź na dane pytanie (_plik index.md_) oraz możliwie przydatne wyjaśnienia zagadnień związanych z danym pytaniem.
 
 ## Jak dodawać i edytować materaiały
 
@@ -48,7 +61,6 @@ git clone https://github.com/DawidZyluk/La-defense.git
 ```
 
 ### Krok 2: Utwórz i Przełącz się na Nowy Branch
-
 
 Utwórz nowy branch, aby wprowadzić swoje zmiany, i przełącz się na niego:
 
