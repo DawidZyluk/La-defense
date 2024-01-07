@@ -12,24 +12,24 @@
 2. **Omów pojęcia polimorfizmu i enkapsulacji** :heavy_check_mark: by Dawid Żyluk
 3. **Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów...**
 4. **Przetworniki analogowo-cyfrowe i cyfrowo-analogowe...**
-5. **Wzmacniacze analogowe; własności wzmacniaczy i podstawowe zastosowania**
-6. **Opisz relacje między prądami i napięciami na szeregowo połączonych elementach RLC...**
+5. **Wzmacniacze analogowe; własności wzmacniaczy...**
+6. **Opisz relacje między prądami i napięciami na szeregowo...**
 7. **Architektury mikroprocesorów. Porównaj CISC i RISC**
 8. **Omów budowę wybranego układu FPGA.**
-9. **Podstawy teoretyczne, klasyfikacja, metody analizy i syntezy układów cyfrowych...**
-10. **Klasyfikacja układów i systemów automatyki. Podstawy teoretyczne, analiza i synteza systemów...**
+9. **Podstawy teoretyczne, klasyfikacja, metody analizy...**
+10. **Klasyfikacja układów i systemów automatyki...**
  
 ### Pytania z przedmiotów specjalnościowych:
 1. **Założenia metodologii SCRUM** :heavy_check_mark: by Dawid Żyluk
 2. **Architektura systemu Android od strony programistycznej** :heavy_check_mark: by Dawid Żyluk
-3. **Wymień najpopularniejsze usługi sieciowe i omów jedną z nich**
-4. **Wymień standardy sieci bezprzewodowych 802.11 i omów jeden z nich....**
-5. **Omów urządzenia występujące w sieciach komputerowych zgodnie z modelem ISO/OSI**
-6. **Omów cykl rozkazowy komputera oraz wykonywanie działań w kodzie uzupełnień do 2.**
-7. **Objaśnij znaczenie zapisu O(n) oraz scharakteryzuj wpływ doboru struktury danych...**
-8. **Objaśnij pojęcie problemu NP-zupełnego oraz podaj przykłady problemów tego typu.** 
-9. **Omów budowę modelu neuronu oraz jego wykorzystanie w sieciach neuronowych** 
-10. **Omów wybrany protokół stosowany w sieciach czujnikowych (Internet rzeczy)** 
+3. **Paradygmaty programowania**
+4. **Wyrażenie lambda na przykładzie języka Java lub Python** :heavy_check_mark: by Dawid Żyluk
+5. **Omów urządzenia występujące w sieciach komputerowych...**
+6. **Omów cykl rozkazowy komputera oraz wykonywanie działań...**
+7. **Objaśnij znaczenie zapisu O(n) oraz scharakteryzuj wpływ...**
+8. **Omów budowę modelu neuronu oraz jego wykorzystanie...** 
+9. **Omów wybrany protokół stosowany w sieciach czujnikowych** 
+10. **Analiza leksykalna i analiza składniowa** 
 
 legenda:
 - :heavy_check_mark: - Zweryfikowane
@@ -116,7 +116,7 @@ git checkout -b nazwa-nowego-brancha
 
 ### Krok 3: Wprowadź Zmiany
 
-Dokonaj zmian w kodzie, dodaj nowe pliki lub wprowadź modyfikacje zgodnie z Twoimi zamierzeniami. Jeżeli jesteś pewien swojego rozwiązania lub posiadasz wiedzę dotyczącą danego zagadnienia i jesteś w stanie potwierdzić zawarte w nim treści umieść ,,:heavy_check_mark: by Imię Nazwisko lub githubowy nick" przy pytaniu na liście w sekcji ,,Status pytań". 
+Dokonaj zmian w kodzie, dodaj nowe pliki lub wprowadź modyfikacje zgodnie z Twoimi zamierzeniami. Jeżeli jesteś pewien swojego rozwiązania lub posiadasz wiedzę dotyczącą danego zagadnienia i jesteś w stanie potwierdzić zawarte w nim treści umieść ,, :heavy_check_mark: by Imię Nazwisko lub githubowy nick" przy pytaniu na liście w sekcji ,,Status pytań". 
 
 ### Krok 4: Zatwierdź Zmiany
 

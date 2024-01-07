@@ -13,11 +13,11 @@
 ### Pytania z przedmiotów specjalnościowych:
 1. Założenia metodologii SCRUM
 2. Architektura systemu Android od strony programistycznej
-3. Wymień najpopularniejsze usługi sieciowe i omów jedną z nich
-4. Wymień standardy sieci bezprzewodowych 802.11 i omów jeden z nich. (802.11a, 802.11 b/g, 802.11 n, 802.11ac)
+3. Paradygmaty programowania
+4. Wyrażenie lambda na przykładzie języka Java lub Python
 5. Omów urządzenia występujące w sieciach komputerowych zgodnie z modelem ISO/OSI
 6. Omów cykl rozkazowy komputera oraz wykonywanie działań w kodzie uzupełnień do 2.
 7. Objaśnij znaczenie zapisu O(n) oraz scharakteryzuj wpływ doboru struktury danych na czas wykonania programu.
-8. Objaśnij pojęcie problemu NP-zupełnego oraz podaj przykłady problemów tego typu. 
-9. Omów budowę modelu neuronu oraz jego wykorzystanie w sieciach neuronowych 
-10. Omów wybrany protokół stosowany w sieciach czujnikowych (Internet rzeczy) 
+8. Omów budowę modelu neuronu oraz jego wykorzystanie w sieciach neuronowych 
+9. Omów wybrany protokół stosowany w sieciach czujnikowych (Internet rzeczy) 
+10. Analiza leksykalna i analiza składniowa - zastosowania, metody
