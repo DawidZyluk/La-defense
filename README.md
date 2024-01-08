@@ -29,10 +29,10 @@
 7. **Objaśnij znaczenie zapisu O(n) oraz scharakteryzuj wpływ...**
 8. **Omów budowę modelu neuronu oraz jego wykorzystanie...** 
 9. **Omów wybrany protokół stosowany w sieciach czujnikowych** 
-10. **Analiza leksykalna i analiza składniowa** 
+10. **Analiza leksykalna i analiza składniowa** :heavy_check_mark: by Dawid Żyluk
 
-legenda:
-- :heavy_check_mark: - Zweryfikowane
+legenda: \
+:heavy_check_mark: - Zweryfikowane
 
 
 ## Before you start
