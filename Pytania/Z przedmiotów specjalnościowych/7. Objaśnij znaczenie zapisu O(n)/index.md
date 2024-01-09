@@ -4,6 +4,14 @@
 
 Zapis O(n) to forma zapisu złożoności czasowej algorytmu, gdzie "O" oznacza notację wielkiego O, a "n" reprezentuje rozmiar danych wejściowych. Złożoność czasowa O(n) oznacza, że czas wykonania algorytmu rośnie liniowo wraz z rozmiarem danych wejściowych. Innymi słowy, im większe "n", tym więcej czasu algorytm będzie potrzebować do wykonania.
 
+<p align="center"> 
+  <img src="time.webp" style="height: 380"/>
+</p>
+
+<p align="center">
+  <b>Wykres złożoności czasowej</b><a href="[link do źródła](https://towardsdatascience.com/understanding-time-complexity-with-python-examples-2bda6e8158a7)"><sup>[1]</sup></a>
+</p>
+
 Przykłady złożoności czasowej:
 
 - O(1): Stała złożoność czasowa (czas stały, niezależny od rozmiaru danych).
@@ -15,25 +23,24 @@ Przykłady złożoności czasowej:
 
 ### Wpływ Doboru Struktury Danych na Czas Wykonania Programu:
 
-Dobór odpowiedniej struktury danych ma kluczowe znaczenie dla efektywności algorytmu i czasu wykonania programu. Poniżej przedstawiamy kilka aspektów, które pokazują, jak struktury danych wpływają na wydajność:
+Dobór odpowiedniej struktury danych ma znaczący wpływ na czas wykonania programu. Oto kilka kwestii, które warto rozważyć:
 
-1. **Operacje Wyszukiwania:**
+1. **Wyszukiwanie i Wstawianie:**
+   - Struktury danych, takie jak drzewa binarne, mogą umożliwić efektywne operacje wyszukiwania i wstawiania. Wyszukiwanie w drzewie binarnym ma złożoność $\log n$, co jest znacznie lepsze niż liniowe przeszukiwanie listy ($O(n)$).
 
-   - **Lista Łańcuchowa vs. Tablica:** Jeśli często musisz wykonywać operacje wyszukiwania, tablice są bardziej efektywne niż listy łańcuchowe. Wyszukiwanie w tablicy o stałym czasie O(1), podczas gdy w liście łańcuchowej może wymagać O(n) czasu.
+2. **Operacje na Końcu Struktury:**
+   - Listy są efektywne do szybkich operacji na końcu struktury (np. dodawanie elementów na końcu). Operacje na końcu tablicy mogą wymagać przesunięcia wszystkich elementów, co jest bardziej kosztowne.
 
-2. **Operacje Wstawiania i Usuwania:**
+3. **Złożoność Wyszukiwania:**
+   - Wybór struktury danych zależy od rodzaju operacji, jakie będą wykonywane. Jeśli głównie zachodzi potrzeba wyszukiwania, to drzewo binarne lub tablica haszująca mogą być bardziej odpowiednie.
 
-   - **Lista vs. Tablica:** W przypadku częstych operacji wstawiania i usuwania, lista może być bardziej efektywna, ponieważ operacje te wymagają O(1) czasu dla listy, podczas gdy dla tablicy mogą wymagać O(n) czasu ze względu na konieczność przesuwania elementów.
+4. **Złożoność Pamięciowa:**
+   - Wpływ na czas wykonania programu nie obejmuje tylko samego czasu wykonania, ale również złożoność pamięciową. Niektóre struktury danych są bardziej efektywne pod względem pamięci niż inne.
 
-3. **Dostęp do Elementu w Losowym Miejscu:**
+5. **Dynamiczne vs. Statyczne:**
+   - Dynamiczne struktury danych, takie jak listy lub drzewa, mogą dostosowywać się do zmian rozmiaru, co jest korzystne w przypadku dynamicznie zmieniających się danych. Struktury statyczne, takie jak tablice, są ograniczone stałym rozmiarem.
 
-   - **Tablica vs. Lista:** W przypadku częstego dostępu do elementów w dowolnym miejscu, tablica jest bardziej efektywna, ponieważ umożliwia dostęp w czasie O(1), podczas gdy dla listy może to być O(n).
+6. **Rodzaj Operacji:**
+   - Różne struktury danych są zoptymalizowane pod kątem różnych rodzajów operacji. Należy zastanowić się, czy program będzie bardziej intensywny pod względem operacji odczytu czy zapisu, a następnie dostosować strukturę danych odpowiednio.
 
-4. **Wielkość Pamięci:**
-
-   - **Tablica vs. Lista:** Tablice zazwyczaj wymagają mniej pamięci, ponieważ przechowują elementy w jednym obszarze pamięci, podczas gdy listy potrzebują dodatkowej pamięci na przechowywanie wskaźników do kolejnych elementów.
-
-5. **Kolejność Elementów:**
-   - **Kopiec binarny vs. Lista Posortowana:** Jeśli często potrzebujesz znaleźć najmniejszy lub największy element, kopiec binarny jest bardziej efektywny niż sortowanie listy, ponieważ operacje dodawania i usuwania w kopcu binarnym mają złożoność czasową O(log n).
-
-Ostatecznie, dobór odpowiedniej struktury danych zależy od konkretnej sytuacji i rodzaju operacji, które będą wykonywane w programie. Wielkość danych, częstość operacji oraz specyfika problemu mają kluczowe znaczenie przy wyborze struktury danych dla optymalnej wydajności.
+Dobór odpowiedniej struktury danych jest kluczowy dla efektywności programu, a świadome podejście do tego zagadnienia może znacznie poprawić wydajność i skalowalność systemu.

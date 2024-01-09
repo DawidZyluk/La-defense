@@ -33,7 +33,7 @@ Metoda zstępująca (ang. Top-Down Parsing) to technika analizy składniowej (pa
 </div>
 
 <p align="center">
-  <b>Bottom-Up Parsing</b><a href="https://en.wikipedia.org/wiki/Bottom-up_parsing"><sup>[1]</sup></a>
+  <b>Top-down Parsing</b><a href="https://en.wikipedia.org/wiki/Top-down_parsing"><sup>[1]</sup></a>
 </p>
 
 Metoda zstępująca jest stosowana w parserach rekurencyjnych zstępujących, które mogą być łatwo zdefiniowane za pomocą gramatyki w formie BNF (Backus-Naur Form). Jej zrozumienie i implementacja są kluczowe dla procesu analizy składniowej w kompilatorach.
