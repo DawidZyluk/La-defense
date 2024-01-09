@@ -2,33 +2,60 @@
 
 FPGA, czyli *Field-Programmable Gate Array*, to układ scalony, który umożliwia programowalność i konfigurowalność swojej struktury w terenie (na etapie użytkowania). Przeanalizujmy ogólną budowę typowego układu FPGA:
 
-### Struktura ogólna układu FPGA:
+Układ FPGA Artix-7 jest jednym z produktów firmy Xilinx, należącym do serii 7. Poniżej znajduje się ogólna charakteryzacja budowy układu FPGA Artix-7:
 
-1. **Matryca logiczna (Logic Array Block - LAB):**
-   - Stanowi główną część układu FPGA. To tutaj znajduje się siatka programowalnych bramek logicznych (LUT - Look-Up Tables) oraz przerzutniki (Flip-Flops). LUT umożliwiają programowanie funkcji logicznych, a przerzutniki służą do przechowywania stanów logicznych.
+### Architektura Artix-7 FPGA:
 
-2. **Interkonekty:**
-   - Sieć połączeń, które łączą różne elementy układu FPGA, takie jak LAB, bloki pamięci czy elementy wejścia/wyjścia. Interkonekty są programowalne, co umożliwia elastyczne łączenie różnych komponentów.
+1. **Elementy Logiczne (LE):**
+   - Artix-7 FPGA zawiera dużą ilość logicznych elementów, które obejmują przerzutniki, bramki logiczne oraz inne elementy konieczne do realizacji cyfrowej logiki.
 
-3. **Blok konfiguracyjny (Configuration Block):**
-   - Odpowiada za wczytywanie konfiguracji układu FPGA. Zawiera pamięć, w której przechowywane są informacje o tym, jak układ powinien być skonfigurowany.
+2. **Blok RAM:**
+   - Układ Artix-7 jest wyposażony w bloki RAM, które mogą być używane do przechowywania danych tymczasowych czy też implementacji pamięci operacyjnej.
 
-4. **Elementy wejścia/wyjścia (I/O Blocks):**
-   - Są to punkty wejścia i wyjścia, które umożliwiają komunikację z układem FPGA. Mogą obsługiwać różne standardy komunikacyjne, takie jak LVCMOS, LVDS czy inne.
+3. **Przełączniki Programowalne (Switching Matrix):**
+   - Przełączniki programowalne pozwalają na elastyczne łączenie różnych elementów wewnątrz układu FPGA, umożliwiając konfigurację ścieżek sygnałowych.
 
-5. **Blok pamięci (Block RAM):**
-   - Obszar przeznaczony do przechowywania danych. W FPGA znajdują się bloki pamięci, które można programować w zależności od potrzeb, na przykład do przechowywania tablic look-up czy danych tymczasowych.
+4. **Blok DSP (Sygnał Cyfrowy):**
+   - W przypadku zastosowań przetwarzania sygnałów cyfrowych, Artix-7 posiada specjalne bloki DSP zoptymalizowane pod kątem operacji matematycznych.
 
-6. **Blok DSP (Digital Signal Processing):**
-   - Specjalnie zaprojektowany blok do przetwarzania sygnałów cyfrowych. Zawiera specjalizowane zasoby do szybkiego wykonywania operacji matematycznych, co jest istotne w aplikacjach przetwarzania sygnałów.
+5. **Blok GTY (Transceivery):**
+   - W niektórych modelach Artix-7 znajdują się bloki GTY, które są transceiverami o wysokiej prędkości, umożliwiającymi komunikację z innymi układami czy interfejsami.
 
-7. **Mikroprocesor (jeśli dostępny):**
-   - W niektórych układach FPGA znajdują się wbudowane procesory (np. ARM Cortex), co umożliwia implementację bardziej złożonych algorytmów i aplikacji.
+6. **Urządzenia Peryferyjne i Bloki I/O:**
+   - Artix-7 FPGA oferuje różnorodne bloki wejścia/wyjścia (I/O) i peryferia, które umożliwiają komunikację z zewnętrznymi urządzeniami.
 
-### Proces konfiguracji:
+7. **Hirarchiczna Architektura:**
+   - Artix-7 jest zorganizowany hierarchicznie, co pozwala na łatwe projektowanie i zarządzanie złożonymi projektami FPGA.
 
-Proces konfiguracji polega na wprowadzeniu odpowiednich danych do układu FPGA, aby ten przyjął określoną funkcję lub zachowanie. Typowo konfiguracja jest wczytywana z pamięci flash lub z zewnętrznego źródła po uruchomieniu układu. Konfiguracja obejmuje ustalenie, jak LAB są połączone, jakie funkcje są przypisane do konkretnych bloków, oraz jakie są parametry pracy interkonektów.
+8. **Kontroler Konfiguracji i Pamięć Konfiguracyjna:**
+   - Zawiera kontroler konfiguracji i pamięć konfiguracyjną, która umożliwia programowanie układu FPGA zgodnie z potrzebami użytkownika.
 
-### Zastosowania:
+### Zastosowania Artix-7 FPGA:
 
-Układy FPGA są powszechnie stosowane w systemach cyfrowych do prototypowania, przyspieszania algorytmów, systemów przetwarzania obrazu, cyfrowego przetwarzania sygnałów, komunikacji, i wielu innych obszarów, gdzie istnieje potrzeba elastycznego i programowalnego układu scalonego. W porównaniu z układami ASIC (Application-Specific Integrated Circuit), FPGA oferują szybkość dostosowywania do różnych zastosowań, ale zazwyczaj są nieco wolniejsze i mniej energooszczędne.
+1. **Systemy Komunikacyjne:**
+   - Wykorzystywane w systemach komunikacji, zwłaszcza tam, gdzie wymagana jest elastyczność i konfigurowalność interfejsów komunikacyjnych.
+
+2. **Przetwarzanie Sygnałów Cyfrowych:**
+   - Bloki DSP są efektywne w zastosowaniach przetwarzania sygnałów cyfrowych, takich jak w systemach radia programowalnego czy cyfrowego przetwarzania obrazu.
+
+3. **Prototypowanie i Tworzenie Prototypów:**
+   - Szeroko stosowane w fazie prototypowania projektów cyfrowych przed przeniesieniem ich na bardziej dedykowane układy scalone.
+
+4. **Systemy Kontroli i Sterowania:**
+   - Nadają się do zastosowań w systemach kontroli i sterowania, gdzie konieczna jest dynamiczna konfiguracja logiki.
+
+5. **Aplikacje Przemysłowe:**
+   - Występują w różnych zastosowaniach przemysłowych, od systemów pomiarowych po automatykę przemysłową.
+
+### Zalety Artix-7 FPGA:
+
+- **Łączenie Wysokiej Wydajności z Niskim Kosztem:**
+  Artix-7 oferuje stosunek wydajności do kosztów, co sprawia, że jest atrakcyjny dla projektów o ograniczonym budżecie.
+
+- **Elastyczność i Programowalność:**
+  Dzięki swojej naturze FPGA, Artix-7 jest wysoce programowalny i elastyczny, co pozwala na dostosowanie go do różnorodnych zastosowań.
+
+- **Wsparcie dla Wysokich Prędkości Transmisji Danych:**
+  Bloki GTY umożliwiają obsługę wysokich prędkości transmisji danych, co sprawia, że są odpowiednie dla aplikacji wymagających szybkiego przesyłania danych.
+
+Układy FPGA Artix-7 są szeroko stosowane w różnych dziedzinach, gdzie wymagana jest konfigurowalność i możliwość dostosowywania się do zmiennych wymagań projektowych.

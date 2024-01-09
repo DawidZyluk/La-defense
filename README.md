@@ -13,11 +13,11 @@
 3. **Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów...**
 4. **Przetworniki analogowo-cyfrowe i cyfrowo-analogowe...**
 5. **Wzmacniacze analogowe; własności wzmacniaczy...**
-6. **Opisz relacje między prądami i napięciami na szeregowo...**
-7. **Architektury mikroprocesorów. Porównaj CISC i RISC**
-8. **Omów budowę wybranego układu FPGA.**
+6. **Opisz relacje między prądami i napięciami na szeregowo...** :heavy_check_mark: by Dawid Żyluk
+7. **Architektury mikroprocesorów. Porównaj CISC i RISC** :heavy_check_mark: by Dawid Żyluk
+8. **Omów budowę wybranego układu FPGA.** :heavy_check_mark: by Dawid Żyluk
 9. **Podstawy teoretyczne, klasyfikacja, metody analizy...**
-10. **Klasyfikacja układów i systemów automatyki...**
+10. **Klasyfikacja układów i systemów automatyki...** :heavy_check_mark: by Dawid Żyluk
  
 ### Pytania z przedmiotów specjalnościowych:
 1. **Założenia metodologii SCRUM** :heavy_check_mark: by Dawid Żyluk
@@ -26,7 +26,7 @@
 4. **Wyrażenie lambda na przykładzie języka Java lub Python** :heavy_check_mark: by Dawid Żyluk
 5. **Omów urządzenia występujące w sieciach komputerowych...**
 6. **Omów cykl rozkazowy komputera oraz wykonywanie działań...**
-7. **Objaśnij znaczenie zapisu O(n) oraz scharakteryzuj wpływ...**
+7. **Objaśnij znaczenie zapisu O(n) oraz scharakteryzuj wpływ...** :heavy_check_mark: by Dawid Żyluk
 8. **Omów budowę modelu neuronu oraz jego wykorzystanie...** 
 9. **Omów wybrany protokół stosowany w sieciach czujnikowych** 
 10. **Analiza leksykalna i analiza składniowa** :heavy_check_mark: by Dawid Żyluk
