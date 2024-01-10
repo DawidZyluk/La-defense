@@ -10,7 +10,7 @@
 
 1. **Kompilacja, interpretacja i języki oparte o wirtualne maszyny...** :heavy_check_mark:
 2. **Omów pojęcia polimorfizmu i enkapsulacji** :heavy_check_mark:
-3. **Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów...**
+3. **Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów...** :heavy_check_mark:
 4. **Przetworniki analogowo-cyfrowe i cyfrowo-analogowe...**
 5. **Wzmacniacze analogowe; własności wzmacniaczy...**
 6. **Opisz relacje między prądami i napięciami na szeregowo...** :heavy_check_mark:
