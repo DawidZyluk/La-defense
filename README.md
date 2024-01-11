@@ -11,12 +11,12 @@
 1. **Kompilacja, interpretacja i języki oparte o wirtualne maszyny...** :heavy_check_mark:
 2. **Omów pojęcia polimorfizmu i enkapsulacji** :heavy_check_mark:
 3. **Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów...** :heavy_check_mark:
-4. **Przetworniki analogowo-cyfrowe i cyfrowo-analogowe...**
+4. **Przetworniki analogowo-cyfrowe i cyfrowo-analogowe...** :heavy_check_mark:
 5. **Wzmacniacze analogowe; własności wzmacniaczy...**
 6. **Opisz relacje między prądami i napięciami na szeregowo...** :heavy_check_mark:
 7. **Architektury mikroprocesorów. Porównaj CISC i RISC** :heavy_check_mark:
 8. **Omów budowę wybranego układu FPGA.** :heavy_check_mark:
-9. **Podstawy teoretyczne, klasyfikacja, metody analizy...**
+9. **Podstawy teoretyczne, klasyfikacja, metody analizy...** :heavy_check_mark:
 10. **Klasyfikacja układów i systemów automatyki...** :heavy_check_mark:
  
 ### Pytania z przedmiotów specjalnościowych:
