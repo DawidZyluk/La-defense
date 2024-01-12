@@ -8,11 +8,12 @@
 
 ## Status pytań
 
+### Pytania z przedmiotów kierunkowych:
 1. **Kompilacja, interpretacja i języki oparte o wirtualne maszyny...** :heavy_check_mark:
 2. **Omów pojęcia polimorfizmu i enkapsulacji** :heavy_check_mark:
 3. **Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów...** :heavy_check_mark:
 4. **Przetworniki analogowo-cyfrowe i cyfrowo-analogowe...** :heavy_check_mark:
-5. **Wzmacniacze analogowe; własności wzmacniaczy...**
+5. **Wzmacniacze analogowe; własności wzmacniaczy...** :heavy_check_mark:
 6. **Opisz relacje między prądami i napięciami na szeregowo...** :heavy_check_mark:
 7. **Architektury mikroprocesorów. Porównaj CISC i RISC** :heavy_check_mark:
 8. **Omów budowę wybranego układu FPGA.** :heavy_check_mark:

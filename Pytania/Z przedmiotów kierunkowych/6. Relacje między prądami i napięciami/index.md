@@ -72,6 +72,18 @@ $$
 \ I(t) = I_R = I_C = I_L\
 $$
 
+### Szeregowy obwód rezonansowy RLC
+
+Impedancja szeregowo połączonych elementów rezystora ,R, kondensatora C i indukcyjności L jest sumą impedancji elementów obwodu:
+$$Z_{sr}=R-j{\frac {1}{\omega C}}+j\omega L=R+j\left(\omega L-{\frac {1}{\omega C}}\right),$$
+moduł impedancji:
+$$|Z_{sr}|={\sqrt {R^{2}+\left(\omega L-{\frac {1}{\omega C}}\right)^{2}}}.$$
+
+Impedancja osiąga minimum o wartości R przy częstości równej:
+$$\omega _{r}={\frac {1}{\sqrt {LC}}}.$$
+
+Przy tej częstości prąd płynący przez obwód przy danym przyłożonym napięciu osiągnie maksimum (zjawisko rezonansu).
+
 ### Stany Pracy:
 
 1. **Steady State (Stan Ustalony):**
