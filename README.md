@@ -1,6 +1,6 @@
 # Witamy w La Défense!
 
-<p align="center"><img src="assets/image.png" style="height: 352px;"/></p>
+<p align="center"><img src="assets/image.png" style="height: 352px; width: auto;"/></p>
 
 > "Obrona jest sztuką,\
 > a sztuka nigdy nie jest łatwa."\
@@ -25,8 +25,8 @@
 2. **Architektura systemu Android od strony programistycznej** :heavy_check_mark: 
 3. **Paradygmaty programowania** :heavy_check_mark:
 4. **Wyrażenie lambda na przykładzie języka Java lub Python** :heavy_check_mark:
-5. **Omów urządzenia występujące w sieciach komputerowych...**
-6. **Omów cykl rozkazowy komputera oraz wykonywanie działań...**
+5. **Omów urządzenia występujące w sieciach komputerowych...** :heavy_check_mark:
+6. **Omów cykl rozkazowy komputera oraz wykonywanie działań...** :heavy_check_mark:
 7. **Objaśnij znaczenie zapisu O(n) oraz scharakteryzuj wpływ...** :heavy_check_mark:
 8. **Omów budowę modelu neuronu oraz jego wykorzystanie...** 
 9. **Omów wybrany protokół stosowany w sieciach czujnikowych** 

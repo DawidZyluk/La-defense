@@ -79,3 +79,25 @@ Projektowanie filtrów cyfrowych to proces określania charakterystyk filtra, ta
    - **Projektowanie filtrów adaptacyjnych:** Filtry adaptacyjne zmieniają swoje charakterystyki w czasie rzeczywistym w odpowiedzi na zmiany warunków sygnału wejściowego.
 
 Wybór metody projektowania zależy od specyfiki aplikacji, wymagań dotyczących charakterystyki filtra oraz złożoności obliczeniowej, jaką można zaakceptować. Każda z tych metod ma swoje zalety i wady, i dobór zależy od konkretnego przypadku zastosowania.
+
+
+## Dodadkowe rodzaje filtrów
+
+Rodzaje filtrów cyfrowych można podzielić na kilka głównych kategorii, zależnie od ich charakterystyki i sposobu przetwarzania sygnałów. Oto kilka głównych rodzajów filtrów cyfrowych:
+
+1. **Filtr dolnoprzepustowy (Low-pass filter):** Przepuszcza częstotliwości poniżej pewnej wartości granicznej, a tłumi częstotliwości powyżej tej wartości. Wykorzystywany do eliminacji składowych wysokich częstotliwości.
+
+2. **Filtr górnoprzepustowy (High-pass filter):** Przepuszcza częstotliwości powyżej pewnej wartości granicznej, a tłumi częstotliwości poniżej tej wartości. Stosowany do eliminacji składowych niskich częstotliwości.
+
+3. **Filtr pasmowoprzepustowy (Band-pass filter):** Przepuszcza sygnały w określonym pasmie częstotliwości. Wykorzystywany, gdy interesujące są sygnały znajdujące się w określonym zakresie częstotliwości.
+
+4. **Filtr pasmowozaporowy (Band-stop filter lub Notch filter):** Tłumi sygnały w określonym pasmie częstotliwości. Stosowany, gdy istnieją zakłócenia lub sygnały, które należy wyeliminować.
+
+5. **Filtr adaptacyjny:** Zdolny dostosowywać swoje parametry w czasie rzeczywistym w celu skutecznego filtrowania sygnałów zmiennych w czasie.
+
+6. **Filtr Kalmana:** Wykorzystywany w układach kontroli i filtracji sygnałów, zwłaszcza w przypadku estymacji stanu systemu dynamicznego.
+
+7. **Filtr medianowy:** Wykorzystuje medianę (wartość środkową) do redukcji szumów i zakłóceń w sygnałach.
+
+8.  **Filtr wielopoziomowy (Multirate filter):**
+ Zawiera więcej niż jedno pasmo przenoszenia i wykorzystuje techniki wielopoziomowego przetwarzania sygnałów.

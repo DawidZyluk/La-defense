@@ -16,6 +16,8 @@ Cykl rozkazowy komputera to sekwencja kroków, które są wykonywane przez proce
 4. **Zapisanie Wyników (Write Back):**
    - Jeśli operacja generuje wyniki, są one zapisywane w odpowiednich rejestrach lub w pamięci.
 
+---
+
 ### Wykonywanie Działań w Kodzie Uzupełnień do 2 (Two's Complement):
 
 Kod uzupełnień do 2 jest sposobem reprezentacji liczb ze znakiem w komputerach. W tym systemie, liczby dodatnie są reprezentowane bezpośrednio, natomiast liczby ujemne są przedstawiane jako ich uzupełnienie do 2.
