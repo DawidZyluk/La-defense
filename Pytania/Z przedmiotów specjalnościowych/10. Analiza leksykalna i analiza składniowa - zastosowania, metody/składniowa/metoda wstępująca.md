@@ -26,11 +26,11 @@ Metoda wstępująca (ang. Bottom-Up Parsing) to technika analizy składniowej, k
 
 <div style="display: flex; ">
 <p > 
-  <img src="parse_tree.png" style="height: 100%;"/>
+  <img src="parse_tree.png" style="max-height: 100%;"/>
 </p>
 &nbsp;
 <p > 
-  <img src="bottom_up.png" style="height: 100%"/>
+  <img src="bottom_up.png" style="max-height: 100%"/>
 </p>
 </div>
 

@@ -1,6 +1,6 @@
 # Witamy w La Défense!
 
-<p align="center"><img src="assets/image.png" style="height: 352px; width: auto;"/></p>
+<p align="center"><img src="assets/image.png" style="max-height: 352px; width: auto;"/></p>
 
 > "Obrona jest sztuką,\
 > a sztuka nigdy nie jest łatwa."\
@@ -74,7 +74,7 @@ Zachęcamy do dodawania informacji o źródłach (cytatów, zdjęć, schematów 
 
 Oto przykładowe metody dodawania linków do źródeł:
 
-<p align="center"><img src="assets/apple.png" style="height: 152px;"/></p>
+<p align="center"><img src="assets/apple.png" style="max-height: 152px;"/></p>
 
 <p align="center">
   <b>Komputer Apple II</b> <a href="https://pl.wikipedia.org/wiki/Apple_II"><sup>[1]</sup></a>
@@ -86,7 +86,7 @@ Apple II – 8-bitowy komputer domowy opracowany w latach 70. XX wieku przez fir
 <!-- Boilerplate dla zdjęć z opisem -->
 
 <p align="center"> 
-  <img src="name.jpg" style="height: if-needed"/>
+  <img src="name.jpg" style="max-height: if-needed"/>
 </p>
 
 <p align="center">

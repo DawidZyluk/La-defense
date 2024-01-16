@@ -1,0 +1,15 @@
+# WebSocket
+
+Jest protokołem komunikacyjnym, zapewniającym dwukierunkowy kanał wymiany danych poprzez pojedyncze połączenie TCP. Protokół WebSockets został ustandaryzowany przez IETF jako RFC 6455 w 2011 roku, a jego przeglądarkowe API podlega standaryzacji w W3C.
+
+WebSockets różni się od protokołu HTTP. Oba protokoły są zlokalizowane na 7 warstwie w modelu OSI i zależą od TCP na warstwie 4. Pomimo faktu, że są one różne, standard RFC 6455 mówi, że WebSocket został zaprojektowany do działania na portach 80 i 443 przypisanych do HTTP, a także ma wspierać funkcje proxy i pośredników (intermediaries). Aby osiągnąć kompatybilność z HTTP, handshake WebSocket’u wykorzystuje nagłówek HTTP Upgrade, aby przełączyć komunikację z protokołu HTTP na WebSockets.
+
+Protokół WebSocket umożliwia interakcję między przeglądarką internetową (lub inną aplikacją kliencką), a serwerem sieciowym przy niższym obciążeniu niż alternatywne rozwiązania półdupleksowe, takie jak np. odpytywanie HTTP (polling), ułatwiając przy tym znacznie przesyłanie danych w czasie rzeczywistym do i z serwera. Jest to możliwe dzięki zapewnieniu znormalizowanego sposobu wysyłania przez serwer treści do klienta bez uprzedniego żądania klienta i umożliwienia przesyłania komunikatów tam i z powrotem przy zachowaniu aktywnego połączenia. W ten sposób między klientem, a serwerem może odbywać się dwukierunkowa wymiana danych. Komunikacja odbywa się zwykle przez port TCP o numerze 443 (lub 80 w przypadku połączeń niezabezpieczonych), co jest korzystne w środowiskach, które blokują połączenia dla aplikacji innych niż przeglądarki internetowe (np. klienty Torrent, IRC). Przed pojawieniem się WebSocket’ów podobną dwukierunkową komunikację przeglądarka-serwer osiągano w niestandardowy sposób, wykorzystując technologie takie jak Comet czy Adobe Flash Player[3].
+
+Większość współczesnych przeglądarek obsługuje WebSocket’y, w tym m.in.: Google Chrome, Firefox, Microsoft Edge, Internet Explorer, Safari i Opera[4].
+
+W przeciwieństwie do protokołu HTTP, WebSocket zapewnia komunikację w pełnym dupleksie. Dodatkowo WebSocket umożliwia przesyłanie wiadomości na wierzchu protokołu TCP. Sam protokół TCP obsługuje strumienie bajtów bez wbudowanej koncepcji wiadomości. Przed WebSocket komunikacja na porcie 80 w pełnym dupleksie była osiągalna przy użyciu kanałów Comet, jednak implementacja Comet nie jest trywialna, a ze względu na uzgadnianie TCP i obciążenie nagłówka HTTP jest nieefektywna w przypadku małych wiadomości. Protokół WebSocket ma na celu rozwiązanie tych problemów bez naruszania założeń bezpieczeństwa sieci.
+
+Specyfikacja protokołu WebSocket definiuje ws (WebSocket) i wss (WebSocket Secure) jako dwa nowe schematy jednolitego identyfikatora zasobów (URI), które są używane odpowiednio do połączeń nieszyfrowanych i szyfrowanych[5]. Oprócz nazwy schematu i fragmentu (tj. # nie jest obsługiwany), pozostałe komponenty URI są zdefiniowane tak, aby używały ogólnej składni URI[6].
+
+Wykorzystując narzędzia developera w przeglądarce, twórcy stron mogą sprawdzić zarówno handshake WebSocket’u, jak i poszczególne paczki (frames)[7].

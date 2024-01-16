@@ -5,7 +5,7 @@
 Zapis O(n) to forma zapisu złożoności czasowej algorytmu, gdzie "O" oznacza notację wielkiego O, a "n" reprezentuje rozmiar danych wejściowych. Złożoność czasowa O(n) oznacza, że czas wykonania algorytmu rośnie liniowo wraz z rozmiarem danych wejściowych. Innymi słowy, im większe "n", tym więcej czasu algorytm będzie potrzebować do wykonania.
 
 <p align="center"> 
-  <img src="time.webp" style="height: 380"/>
+  <img src="time.webp" style="max-height: 380"/>
 </p>
 
 <p align="center">

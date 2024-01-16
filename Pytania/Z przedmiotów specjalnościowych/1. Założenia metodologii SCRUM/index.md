@@ -1,6 +1,6 @@
 # Założenia metodologii SCRUM 
 
-<p align="center"><img src="scrum.jpg" style="height: 352px;"/></p>
+<p align="center"><img src="scrum.jpg" style="max-height: 352px;"/></p>
 
 <p align="center">
   <b>Diagram metodologii SCRUM</b> <a href="https://agile247.pl/scrum/"><sup>[1]</sup></a>

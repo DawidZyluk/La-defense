@@ -1,6 +1,6 @@
 # Paradygmaty programowania
 
-<p align="center"><img src="dygmaty.webp" style="height: 300px;"/></p>
+<p align="center"><img src="dygmaty.webp" style="max-height: 300px;"/></p>
 
 <p align="center">
   <b>Paradygmaty programowania</b> <a href="https://medium.com/@Ariobarxan/what-is-a-programming-paradigm-ec6c5879952b"><sup>[1]</sup></a>

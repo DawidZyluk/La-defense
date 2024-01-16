@@ -3,7 +3,7 @@
 Metoda automatów skończonych to jedna z technik stosowanych w analizie leksykalnej do rozpoznawania i generowania leksemów (tokenów) na podstawie sekwencji znaków w źródłowym kodzie. Automaty skończone są abstrakcyjnym modelem matematycznym opisującym maszyny, które mogą znajdować się w pewnych stanach, a ich zachowanie jest kontrolowane przez przejścia między tymi stanami w odpowiedzi na wejściowe symbole.
 
 <p align="center"> 
-  <img src="automat.png" style="height: 380"/>
+  <img src="automat.png" style="max-height: 380"/>
 </p>
 
 <p align="center">

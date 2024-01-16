@@ -24,11 +24,11 @@ Metoda zstępująca (ang. Top-Down Parsing) to technika analizy składniowej (pa
 
 <div style="display: flex; ">
 <p > 
-  <img src="parse_tree.png" style="height: 100%;"/>
+  <img src="parse_tree.png" style="max-height: 100%;"/>
 </p>
 &nbsp;
 <p > 
-  <img src="top_down.png" style="height: 100%"/>
+  <img src="top_down.png" style="max-height: 100%"/>
 </p>
 </div>
 

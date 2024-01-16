@@ -1,7 +1,7 @@
 # Architektura systemu Android od strony programistycznej
 
 <p align="center"> 
-  <img src="architecture.jpg" style="height: 500px"/>
+  <img src="architecture.jpg" style="max-height: 500px"/>
 </p>
 
 <p align="center">
