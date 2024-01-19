@@ -1,6 +1,6 @@
 # Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów, metody projektowania
 
-Cyfrowy układ sekwencyjny lub algorytm realizowany przez program komputerowy, który w reakcji na ciąg próbek sygnału dyskretnego podanego na wejście odpowiada ciągiem próbek wyjściowych, zgodnie z deterministyczną (zdarzeniu jednoznacznie przypisuje konkretny stan) funkcją przejścia, która może być liniowa lub nieliniowa.
+**Cyfrowy układ sekwencyjny** lub algorytm realizowany przez program komputerowy, który w reakcji na ciąg próbek sygnału dyskretnego podanego na wejście odpowiada ciągiem próbek wyjściowych, zgodnie z deterministyczną (zdarzeniu jednoznacznie przypisuje konkretny stan) funkcją przejścia, która może być liniowa lub nieliniowa.
 
 W przypadku filtru liniowego jego właściwości całkowicie określa dyskretna odpowiedź impulsowa, a sygnał wyjściowy jest splotem dyskretnym sygnału wejściowego z tą odpowiedzią. W dziedzinie częstotliwości właściwości takiego filtru opisuje transmitancja.
 
@@ -23,8 +23,6 @@ Filtry FIR są obecnie częściej stosowane niż IIR z powodu następujących za
 
 - Filtry FIR są zawsze stabilne, gdyż w ich funkcji transmitancji występują tylko zera, więc nie ma rekursywności mogącej spowodować niestabilność.
 
-- W wielu zastosowaniach (przetwarzanie bieżącego sygnału w blokach, przetwarzanie obrazów) skończona odpowiedź impulsowa jest bardzo pożądana.
-
 - Łatwo jest uzyskać w tego typu filtrach liniową fazę, filtry z liniową fazą opóźniają wszystkie składowe sygnału w jednakowym stopniu.
 
 Jedynymi, choć istotnymi, wadami filtrów FIR w porównaniu do IIR są:
@@ -36,7 +34,7 @@ Jedynymi, choć istotnymi, wadami filtrów FIR w porównaniu do IIR są:
 
 Filtr o nieskończonej odpowiedzi impulsowej (IIR filter ang. Infinite Impulse Response) – rodzaj filtru cyfrowego, który w odróżnieniu od filtrów FIR jest układem rekursywnym. IIR oznacza nieskończoną odpowiedź impulsową. Reakcja na pobudzenie o skończonym czasie trwania jest teoretycznie nieskończenie długa. Jest to efektem występowania pętli sprzężenia zwrotnego
 
-Ze względu na dużą elastyczność w kształtowaniu przebiegu funkcji za pomocą ilorazu wielomianów, znacznie łatwiej uzyskać pożądaną charakterystykę używając filtru IIR niskiego rzędu niż filtru FIR. Wynikają z tego dwie podstawowe zalety filtrów IIR w porównaniu do FIR:
+Ze względu na dużą elastyczność w kształtowaniu przebiegu funkcji za pomocą **ilorazu wielomianów**, znacznie łatwiej uzyskać pożądaną charakterystykę używając filtru IIR niskiego rzędu niż filtru FIR. Wynikają z tego dwie podstawowe zalety filtrów IIR w porównaniu do FIR:
 
 - niska złożoność obliczeniowa,
 - niewielkie zapotrzebowanie na pamięć operacyjną.
