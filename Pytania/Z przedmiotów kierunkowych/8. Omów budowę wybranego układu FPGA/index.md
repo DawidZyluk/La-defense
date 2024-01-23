@@ -6,46 +6,33 @@ Układ FPGA Artix-7 jest jednym z produktów firmy Xilinx, należącym do serii 
 
 ### Architektura Artix-7 FPGA:
 
-1. **Elementy Logiczne (LE):**
-   - Artix-7 FPGA zawiera dużą ilość logicznych elementów, które obejmują przerzutniki, bramki logiczne oraz inne elementy konieczne do realizacji cyfrowej logiki.
+1. **Elementy Logiczne (LE):** Artix-7 FPGA zawiera dużą ilość logicznych elementów, które obejmują przerzutniki, bramki logiczne oraz inne elementy konieczne do realizacji cyfrowej logiki.
 
-2. **Blok RAM:**
-   - Układ Artix-7 jest wyposażony w bloki RAM, które mogą być używane do przechowywania danych tymczasowych czy też implementacji pamięci operacyjnej.
+2. **Blok RAM:** Układ Artix-7 jest wyposażony w bloki RAM, które mogą być używane do przechowywania danych tymczasowych czy też implementacji pamięci operacyjnej.
 
-3. **Przełączniki Programowalne (Switching Matrix):**
-   - Przełączniki programowalne pozwalają na elastyczne łączenie różnych elementów wewnątrz układu FPGA, umożliwiając konfigurację ścieżek sygnałowych.
+3. **Przełączniki Programowalne (Switching Matrix):** Przełączniki programowalne pozwalają na elastyczne łączenie różnych elementów wewnątrz układu FPGA, umożliwiając konfigurację ścieżek sygnałowych.
 
-4. **Blok DSP (Sygnał Cyfrowy):**
-   - W przypadku zastosowań przetwarzania sygnałów cyfrowych, Artix-7 posiada specjalne bloki DSP zoptymalizowane pod kątem operacji matematycznych.
+4. **Blok DSP (Sygnał Cyfrowy):** W przypadku zastosowań przetwarzania sygnałów cyfrowych, Artix-7 posiada specjalne bloki DSP zoptymalizowane pod kątem operacji matematycznych.
 
-5. **Blok GTY (Transceivery):**
-   - W niektórych modelach Artix-7 znajdują się bloki GTY, które są transceiverami o wysokiej prędkości, umożliwiającymi komunikację z innymi układami czy interfejsami.
+5. **Blok GTY (Transceivery):** W niektórych modelach Artix-7 znajdują się bloki GTY, które są transceiverami o wysokiej prędkości, umożliwiającymi komunikację z innymi układami czy interfejsami.
 
-6. **Urządzenia Peryferyjne i Bloki I/O:**
-   - Artix-7 FPGA oferuje różnorodne bloki wejścia/wyjścia (I/O) i peryferia, które umożliwiają komunikację z zewnętrznymi urządzeniami.
+6. **Urządzenia Peryferyjne i Bloki I/O:** Artix-7 FPGA oferuje różnorodne bloki wejścia/wyjścia (I/O) i peryferia, które umożliwiają komunikację z zewnętrznymi urządzeniami.
 
-7. **Hierarchiczna Architektura:**
-   - Artix-7 jest zorganizowany hierarchicznie, co pozwala na łatwe projektowanie i zarządzanie złożonymi projektami FPGA.
+7. **Hierarchiczna Architektura:** Artix-7 jest zorganizowany hierarchicznie, co pozwala na łatwe projektowanie i zarządzanie złożonymi projektami FPGA.
 
-8. **Kontroler Konfiguracji i Pamięć Konfiguracyjna:**
-   - Zawiera kontroler konfiguracji i pamięć konfiguracyjną, która umożliwia programowanie układu FPGA zgodnie z potrzebami użytkownika.
+8. **Kontroler Konfiguracji i Pamięć Konfiguracyjna:** Zawiera kontroler konfiguracji i pamięć konfiguracyjną, która umożliwia programowanie układu FPGA zgodnie z potrzebami użytkownika.
 
 ### Zastosowania Artix-7 FPGA:
 
-1. **Systemy Komunikacyjne:**
-   - Wykorzystywane w systemach komunikacji, zwłaszcza tam, gdzie wymagana jest elastyczność i konfigurowalność interfejsów komunikacyjnych.
+1. **Systemy Komunikacyjne:** Wykorzystywane w systemach komunikacji, zwłaszcza tam, gdzie wymagana jest elastyczność i konfigurowalność interfejsów komunikacyjnych.
 
-2. **Przetwarzanie Sygnałów Cyfrowych:**
-   - Bloki DSP są efektywne w zastosowaniach przetwarzania sygnałów cyfrowych, takich jak w systemach radia programowalnego czy cyfrowego przetwarzania obrazu.
+2. **Przetwarzanie Sygnałów Cyfrowych:** Bloki DSP są efektywne w zastosowaniach przetwarzania sygnałów cyfrowych, takich jak w systemach radia programowalnego czy cyfrowego przetwarzania obrazu.
 
-3. **Prototypowanie i Tworzenie Prototypów:**
-   - Szeroko stosowane w fazie prototypowania projektów cyfrowych przed przeniesieniem ich na bardziej dedykowane układy scalone.
+3. **Prototypowanie i Tworzenie Prototypów:** Szeroko stosowane w fazie prototypowania projektów cyfrowych przed przeniesieniem ich na bardziej dedykowane układy scalone.
 
-4. **Systemy Kontroli i Sterowania:**
-   - Nadają się do zastosowań w systemach kontroli i sterowania, gdzie konieczna jest dynamiczna konfiguracja logiki.
+4. **Systemy Kontroli i Sterowania:** Nadają się do zastosowań w systemach kontroli i sterowania, gdzie konieczna jest dynamiczna konfiguracja logiki.
 
-5. **Aplikacje Przemysłowe:**
-   - Występują w różnych zastosowaniach przemysłowych, od systemów pomiarowych po automatykę przemysłową.
+5. **Aplikacje Przemysłowe:** Występują w różnych zastosowaniach przemysłowych, od systemów pomiarowych po automatykę przemysłową.
 
 ### Zalety Artix-7 FPGA:
 
@@ -57,5 +44,3 @@ Układ FPGA Artix-7 jest jednym z produktów firmy Xilinx, należącym do serii 
 
 - **Wsparcie dla Wysokich Prędkości Transmisji Danych:**
   Bloki GTY umożliwiają obsługę wysokich prędkości transmisji danych, co sprawia, że są odpowiednie dla aplikacji wymagających szybkiego przesyłania danych.
-
-Układy FPGA Artix-7 są szeroko stosowane w różnych dziedzinach, gdzie wymagana jest konfigurowalność i możliwość dostosowywania się do zmiennych wymagań projektowych.

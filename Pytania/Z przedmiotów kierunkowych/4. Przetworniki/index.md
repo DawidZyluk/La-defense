@@ -29,15 +29,11 @@ Przetwornik analogowo-cyfrowy A/C (ADC – analog to digital converter) – ukł
 
 1. **Nieliniowość całkowita** (ang. integral nonlinearity) jest określana jako maksymalna różnica *$(\Delta U_I)_{max}$* napięcia wejściowego pomiędzy rzeczywistą charakterystyką przetwarzania $N = f(U_I)$ a charakterystyką idealną, odniesiona do maksymalnej wartości napięcia przetwarzania $Umax$, wyrażona w procentach. Charakterystykę idealną wyznacza się jako prostą łączącą skrajne punkty zakresu przetwarzania, charakterystykę rzeczywistą natomiast jako linię łączącą środki przedziałów napięcia $U_I$ odpowiadających kolejnym wartościom cyfrowym na wyjściu przetwornika
     
-    $$
-    \varepsilon _{r}=\pm {\frac {\left(\Delta U_{I}\right)_{max}}{U_{max}}}\times 100\%
-    $$
+    $$\varepsilon _{r}=\pm {\frac {\left(\Delta U_{I}\right)_{max}}{U_{max}}}\times 100\%$$
 
 2. **Nieliniowość różniczkowa** (ang. differential nonlinearity) określa się przez wyznaczenie różnic między sąsiednimi wartościami napięcia wyjściowego, wywołanych zmianą słowa wejściowego o wartość najmniej znaczącego bitu. Określa więc błąd jednorodności szerokości kanałów przetwornika. Nieliniowość różniczkowa jest podawana w procentach jako maksymalna różnica pomiędzy szerokością kanału rzeczywistego $U_{r}$ a szerokością kanału nominalnego, $U_{n}$ odniesiona do szerokości nominalnej. $U_{n}$. 
 
-    $$
-    \varepsilon _{d}=\pm {\frac {\left|U_{r}-U_{n}\right|_{max}}{U_{n}}}\times 100\%
-    $$
+    $$\varepsilon _{d}=\pm {\frac {\left|U_{r}-U_{n}\right|_{max}}{U_{n}}}\times 100\%$$
 
 3. **Błąd przesunięcia zera (błąd niezrównoważenia)** jest określany przez wartość napięcia wejściowego potrzebną do przejścia od zerowej wartości słowa wyjściowego do następnej większej wartości. Błąd ten jest mierzony jako przesunięcie w stosunku do charakterystyki idealnej. Należy podkreślić, że wartość błędu przesunięcia zera jest rzadko podawana w katalogach, gdyż jest możliwa całkowita kompensacja tego błędu w większości nowoczesnych przetworników.
 
@@ -71,7 +67,9 @@ $(2^{8}).$ Rozdzielczość jest powiązana z Efektywną Liczbą Bitów (ENOB –
 2. **Maksymalna częstotliwość próbkowania** – maksymalna prędkość dla której obwód przetwornika C/A jest w stanie pracować i produkować stały poprawny sygnał na wyjściu. W praktyce nie jest możliwe dokładne odtworzenie samego sygnału na podstawie wygenerowanych wartości liczbowych ze względu na błąd kwantyzacji. Wiarygodne odwzorowanie sygnału jest możliwe wtedy gdy częstotliwość próbkowania jest dwukrotnie większa od najwyższej częstotliwości składowej sygnału. Zgodnie z twierdzeniem Katielnikova-Shannona.
 3. **Monotoniczność** – zdolność wyjścia analogowego przetwornika C/A do wzrostu wraz ze wzrostem w kodzie cyfrowym lub odwrotnie. Ta właściwość jest ważna dla przetwornika ze względu na możliwość zastosowania go wraz ze słabej częstotliwości sygnałem na wejściu.
 4. **THD+N** (Współczynnik zawartości harmonicznych z ang. Total harmonic distortion) – stosunek wartości skutecznej wyższych harmonicznych sygnału, do wartości skutecznej składowej podstawowej. Współczynnik zawartości harmonicznych często podaje się w procentach.
-5. **Skala dynamiki D.R** (z ang.Dynamic Range) – wartość w dB jako różnica największego i najmniejszego sygnału jaki przetwornik C/A jest w stanie wytworzyć.Wartość zależna od rozdzielczości przetwornika przykładowo dla CD-Audio 16 bitów wynosi maksymalnie 96,32959861 dB a można ją obliczyć w następujący sposób D.R=20log(2^n) gdzie n – liczba bitów dla CD 20log(2^16) = 20log(65536)=20*4,8164799.
+5. **Skala dynamiki D.R** (z ang.Dynamic Range) – wartość w $dB$ jako różnica największego i najmniejszego sygnału jaki przetwornik C/A jest w stanie wytworzyć. Wartość zależna od rozdzielczości przetwornika przykładowo dla CD-Audio 16 bitów wynosi maksymalnie $96,32959861$ ${\text{dB}}$ a można ją obliczyć w następujący sposób 
+    $$D.R=20log(2^n)$$ 
+    gdzie $n$ – liczba bitów dla CD $20log(2^{16})=20log(65536)=20*4,8164799$
 
 ### Zastosowanie 
 
