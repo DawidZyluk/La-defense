@@ -2,54 +2,73 @@
 
 ### Podstawy Teoretyczne:
 
-**Układy cyfrowe**, także **układy logiczne** – układy operujące na wartościach dyskretnych. Układy cyfrowe budowane są w oparciu o bramki logiczne realizujące elementarne operacje logiczne: iloczyn logiczny (AND, NAND), sumę logiczną (OR, NOR), negację NOT, różnicę symetryczną (XOR). Tworzone są układy o logice sekwencyjnej i kombinacyjnej. Początkowo układy cyfrowe były realizowane jako układy mechaniczne, następnie elektromechaniczne, współcześnie tworzone są układy elektroniczne. Złożone układy cyfrowe wykonuje się w postaci układów scalonych.
+**Układy cyfrowe**, także **układy logiczne**: 
+- układy operujące na wartościach dyskretnych. 
+  
+- Układy cyfrowe budowane są w oparciu o bramki logiczne realizujące elementarne operacje logiczne: iloczyn logiczny (AND, NAND), sumę logiczną (OR, NOR), negację NOT, różnicę symetryczną (XOR). 
+  
+- Tworzone są układy o logice sekwencyjnej i kombinacyjnej. 
+  
+- Początkowo układy cyfrowe były realizowane jako układy mechaniczne, następnie elektromechaniczne, współcześnie tworzone są układy elektroniczne. Złożone układy cyfrowe wykonuje się w postaci układów scalonych.
 
-**Zalety układów cyfrowych**:
-
-- Możliwość bezstratnego kodowania i przesyłania informacji.
- 
-- Uproszczony zapis i przechowywanie informacji cyfrowej.
-  
-- Mniejsza wrażliwość na zakłócenia elektryczne.
-  
-- Możliwość tworzenia układów programowalnych, których działanie określa program komputerowy (patrz: mikroprocesor, koprocesor).
-  
-**Wady układów cyfrowych**:
-
-- Skomplikowanie zarówno na poziomie elektrycznym, jak i logicznym; obecnie ich projektowanie wspomagają komputery (patrz: język opisu sprzętu).
-  
-- Mimo większej odporności na zakłócenia, wykrywanie przekłamań stanów logicznych, np. pojawienie się wartości 0 zamiast spodziewanej 1, wymaga dodatkowych zabezpieczeń (patrz: kod korekcyjny) choć nie zawsze jest możliwe wykrycie błędu; jeszcze większy problem stanowi ewentualne odtworzenie oryginalnej informacji.
   
 ---
 
 ### Klasyfikacja
 
-Ze względu na sposób przetwarzania informacji:
+**Ze względu na sposób przetwarzania informacji**:
 
-1. **Układy kombinacyjne** – układy „bez pamięci”, w których sygnały wyjściowe są zawsze takie same dla określonych sygnałów wejściowych;
-2. **Układy sekwencyjne** – układy „z pamięcią”, w których stan wyjść zależy nie tylko od aktualnego stanu wejść, ale również od stanów wcześniejszych.
-
-Dodatkowe kategorie klasyfikacji:
+   - **Układy kombinacyjne** – układy „bez pamięci”, w których sygnały wyjściowe są zawsze takie same dla określonych sygnałów wejściowych;
    
-Ze względu na technologie w jakiej wykonano bramki logiczne:
-
-1. **Bipolarne**:
-   - TTL (ang. Transistor-Transistor Logic)
-   - ECL (Emitter Coupled Logic)
-   - I2L (Integrated Injection Logic).
-2. **Unipolarne**:
-   - NMOS i PMOS
-   - CMOS (Complementary MOS)
+   - **Układy sekwencyjne** – układy „z pamięcią”, w których stan wyjść zależy nie tylko od aktualnego stanu wejść, ale również od stanów wcześniejszych.
    
-Ostatnimi laty bardzo popularne stały się programowalne układy cyfrowe. W odróżnieniu od programowalnych mikroprocesorów, w tym przypadku programowana jest fizyczna struktura układu oparta na:
+**Ze względu na technologie w jakiej wykonano bramki logiczne**:
 
-1. **Matrycach**:
-   - PLA
-   - PAL
-2. **Komórkach**:
-   - SPLD
-   - CPLD
-   - FPGA
+  **Bipolarne**:
+  
+  - **TTL (Transistor-Transistor Logic):**
+    - TTL jest oparty na technologii tranzystorów bipolarnych, są używane do budowy układów logicznych.
+    - szybkoś działania, ale wymaga więcej energii niż inne
+    - stosunkowo niższy poziom szumów.
+    - tanie 
+
+  - **ECL (Emitter Coupled Logic):**
+    - ECL używa tranzystorów bipolarnych połączonych emiterami. 
+    - niskie opóźnienie propagacji
+    - szybkość kosztem zużycia energii.
+
+  - **I2L (Integrated Injection Logic):**
+    - wprowadzenie nośników ładunku (iniekcji) do struktury tranzystorów.
+    - dobrą wydajność przy niższym zużyciu energii 
+    
+  **Unipolarne**:
+  - **NMOS i PMOS (N-type Metal-Oxide-Semiconductor i P-type Metal-Oxide-Semiconductor):**
+    -  NMOS i PMOS to rodzaje technologii MOSFET (Metal-Oxide-Semiconductor Field-Effect Transistor), gdzie różnice polegają na typie domieszkowania (dodatnim dla PMOS i ujemnym dla NMOS).
+    - NMOS i PMOS są powszechnie używane w technologii CMOS, a ich wspólna implementacja pozwala na osiągnięcie niskiego zużycia energii przy zachowaniu dobrej szybkości działania.
+
+  - **CMOS (Complementary MOS):**
+    - CMOS łączy NMOS i PMOS, tworząc komplementarne pary. To połączenie pozwala na minimalne zużycie energii w stanie statycznym.
+    - technologia do budowy bramek logicznych 
+    - niskie zużycie energii 
+    - dobrą skalowalność
+   
+**Programowalne układy cyfrowe** 
+
+W odróżnieniu od programowalnych mikroprocesorów, w tym przypadku programowana jest fizyczna struktura układu oparta na:
+
+- Matryce programowalne:
+
+  - **PLA (Programmable Logic Array):** składa się z dwóch głównych sekcji: AND-matrice (macierzy iloczynu logicznego) i OR-matrice (macierzy sumy logicznej). PLA umożliwia pełną dowolność w konfiguracji funkcji logicznych dzięki programowalnym multiplekserom i bramkom w obu sekcjach.
+
+  - **PAL (Programmable Array Logic):** PAL składa się głównie z OR-matrice (macierzy sumy logicznej) i inwerterów, a wejścia AND są stałe. Programowanie odbywa się głównie poprzez konfigurację OR-matrycy i inwerterów. Znajduje zastosowanie tam, gdzie wymagana jest mniej skomplikowana logika, a prostota implementacji jest priorytetem.
+
+- Komórkowe układy programowalne:
+
+  - **SPLD (Simple Programmable Logic Device):** SPLD to prosty, programowalny układ logiczny, który może być używany do tworzenia prostych kombinacyjnych i sekwencyjnych funkcji logicznych. Często stosowany w aplikacjach, gdzie potrzebna jest mała ilość logiki programowalnej.
+
+  - **CPLD (Complex Programmable Logic Device):** CPLD to bardziej zaawansowany programowalny układ logiczny niż SPLD. Składa się z wielu makrokomórek logicznych, które mogą być konfigurowane do realizacji złożonych funkcji. Wykorzystywany w bardziej złożonych układach cyfrowych, które wymagają większej ilości logiki programowalnej.
+
+  - **FPGA (Field-Programmable Gate Array):** FPGA to najbardziej elastyczny rodzaj programowalnego układu cyfrowego. Składa się z wielu konfigurowalnych bloków logicznych oraz elementów interkonekcyjnych, co pozwala na tworzenie niemal dowolnej struktury logicznej. Stosowany w aplikacjach, gdzie wymagana jest duża elastyczność i możliwość rekonfiguracji układu.
   
 # Metody analizy i syntezy układów cyfrowych
 
