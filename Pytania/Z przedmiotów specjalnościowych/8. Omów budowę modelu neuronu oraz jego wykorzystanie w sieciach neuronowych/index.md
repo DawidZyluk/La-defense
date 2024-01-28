@@ -1,4 +1,11 @@
-# Omów budowę modelu neuronu oraz jego wykorzystanie w sieciach neuronowych 
+# Omów budowę modelu neuronu oraz jego wykorzystanie w sieciach neuronowych
+
+<p align="center" style="background-color: white; padding: 3rem"><img src="neuron.png" style=";max-height: 352px; width: auto;"/></p>
+
+Film na yt: \
+<a src="https://www.youtube.com/watch?v=aircAruvnKk">Część 1</a> \
+<a src="https://www.youtube.com/watch?v=IHZwWFHWa-w">Część 2</a> \
+<a src="https://www.youtube.com/watch?v=Ilg3gGewQ5U">Część 2</a>
 
 ### Budowa Modelu Neuronu:
 
@@ -12,7 +19,7 @@ Neuron w kontekście sztucznych sieci neuronowych jest modelem inspirowanym biol
 
 4. **Funkcja Aktywacji (Activation Function):** Funkcja aktywacji decyduje o tym, czy neuron ma zostać aktywowany (wygenerować wyjście) na podstawie sumy ważonych wejść. Funkcja ta wprowadza nieliniowość do modelu, co umożliwia sieci neuronowej modelowanie bardziej skomplikowanych zależności.
 
-5. **Prog (Bias):** Prog (lub bias) jest dodawany do sumy ważonej przed przekazaniem jej do funkcji aktywacji. Prog pozwala na regulowanie, kiedy neuron powinien być aktywowany.
+5. **Próg (Bias):** Próg (lub bias) jest dodawany do sumy ważonej przed przekazaniem jej do funkcji aktywacji. Próg pozwala na regulowanie, kiedy neuron powinien być aktywowany.
 
 6. **Wyjście (Output):** Wynik działania funkcji aktywacji jest wyjściem neuronu, które może być przekazywane do innych neuronów jako wejścia.
 

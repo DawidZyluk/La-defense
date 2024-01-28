@@ -7,8 +7,6 @@
   
 - Układy cyfrowe budowane są w oparciu o bramki logiczne realizujące elementarne operacje logiczne: iloczyn logiczny (AND, NAND), sumę logiczną (OR, NOR), negację NOT, różnicę symetryczną (XOR). 
   
-- Tworzone są układy o logice sekwencyjnej i kombinacyjnej. 
-  
 - Początkowo układy cyfrowe były realizowane jako układy mechaniczne, następnie elektromechaniczne, współcześnie tworzone są układy elektroniczne. Złożone układy cyfrowe wykonuje się w postaci układów scalonych.
 
   
@@ -16,59 +14,59 @@
 
 ### Klasyfikacja
 
-**Ze względu na sposób przetwarzania informacji**:
+1. **Ze względu na sposób przetwarzania informacji**:
 
    - **Układy kombinacyjne** – układy „bez pamięci”, w których sygnały wyjściowe są zawsze takie same dla określonych sygnałów wejściowych;
    
    - **Układy sekwencyjne** – układy „z pamięcią”, w których stan wyjść zależy nie tylko od aktualnego stanu wejść, ale również od stanów wcześniejszych.
    
-**Ze względu na technologie w jakiej wykonano bramki logiczne**:
+2. **Ze względu na technologie tranzystorów**:
 
-  **Bipolarne**:
-  
-  - **TTL (Transistor-Transistor Logic):**
-    - TTL jest oparty na technologii tranzystorów bipolarnych, są używane do budowy układów logicznych.
-    - szybkoś działania, ale wymaga więcej energii niż inne
-    - stosunkowo niższy poziom szumów.
-    - tanie 
-
-  - **ECL (Emitter Coupled Logic):**
-    - ECL używa tranzystorów bipolarnych połączonych emiterami. 
-    - niskie opóźnienie propagacji
-    - szybkość kosztem zużycia energii.
-
-  - **I2L (Integrated Injection Logic):**
-    - wprowadzenie nośników ładunku (iniekcji) do struktury tranzystorów.
-    - dobrą wydajność przy niższym zużyciu energii 
+    **Bipolarne**:
     
-  **Unipolarne**:
-  - **NMOS i PMOS (N-type Metal-Oxide-Semiconductor i P-type Metal-Oxide-Semiconductor):**
-    -  NMOS i PMOS to rodzaje technologii MOSFET (Metal-Oxide-Semiconductor Field-Effect Transistor), gdzie różnice polegają na typie domieszkowania (dodatnim dla PMOS i ujemnym dla NMOS).
-    - NMOS i PMOS są powszechnie używane w technologii CMOS, a ich wspólna implementacja pozwala na osiągnięcie niskiego zużycia energii przy zachowaniu dobrej szybkości działania.
+    - **TTL (Transistor-Transistor Logic):**
+      - TTL jest oparty na technologii tranzystorów bipolarnych, są używane do budowy układów logicznych.
+      - szybkoś działania, ale wymaga więcej energii niż inne
+      - stosunkowo niższy poziom szumów.
+      - tanie 
 
-  - **CMOS (Complementary MOS):**
-    - CMOS łączy NMOS i PMOS, tworząc komplementarne pary. To połączenie pozwala na minimalne zużycie energii w stanie statycznym.
-    - technologia do budowy bramek logicznych 
-    - niskie zużycie energii 
-    - dobrą skalowalność
+    - **ECL (Emitter Coupled Logic):**
+      - ECL używa tranzystorów bipolarnych połączonych emiterami. 
+      - niskie opóźnienie propagacji
+      - szybkość kosztem zużycia energii.
+
+    - **I2L (Integrated Injection Logic):**
+      - wprowadzenie nośników ładunku (iniekcji) do struktury tranzystorów.
+      - dobrą wydajność przy niższym zużyciu energii 
+      
+    **Unipolarne (Tranzystory polowe, FET)**:
+    - **NMOS i PMOS (N-type Metal-Oxide-Semiconductor i P-type Metal-Oxide-Semiconductor):**
+      -  NMOS i PMOS to rodzaje technologii MOSFET (Metal-Oxide-Semiconductor Field-Effect Transistor), gdzie różnice polegają na typie domieszkowania (dodatnim dla PMOS i ujemnym dla NMOS).
+      - NMOS i PMOS są powszechnie używane w technologii CMOS, a ich wspólna implementacja pozwala na osiągnięcie niskiego zużycia energii przy zachowaniu dobrej szybkości działania.
+
+    - **CMOS (Complementary MOS):**
+      - CMOS łączy NMOS i PMOS, tworząc komplementarne pary. To połączenie pozwala na minimalne zużycie energii w stanie statycznym.
+      - technologia do budowy bramek logicznych 
+      - niskie zużycie energii 
+      - dobrą skalowalność
    
-**Programowalne układy cyfrowe** 
+3. **Programowalne układy cyfrowe** 
 
-W odróżnieniu od programowalnych mikroprocesorów, w tym przypadku programowana jest fizyczna struktura układu oparta na:
+    W odróżnieniu od programowalnych mikroprocesorów, w tym przypadku programowana jest fizyczna struktura układu oparta na:
 
-- Matryce programowalne:
+    **Matryce programowalne**:
 
-  - **PLA (Programmable Logic Array):** składa się z dwóch głównych sekcji: AND-matrice (macierzy iloczynu logicznego) i OR-matrice (macierzy sumy logicznej). PLA umożliwia pełną dowolność w konfiguracji funkcji logicznych dzięki programowalnym multiplekserom i bramkom w obu sekcjach.
+    - **PLA (Programmable Logic Array):** składa się z dwóch głównych sekcji: AND-matrice (macierzy iloczynu logicznego) i OR-matrice (macierzy sumy logicznej). PLA umożliwia pełną dowolność w konfiguracji funkcji logicznych dzięki programowalnym multiplekserom i bramkom w obu sekcjach.
 
-  - **PAL (Programmable Array Logic):** PAL składa się głównie z OR-matrice (macierzy sumy logicznej) i inwerterów, a wejścia AND są stałe. Programowanie odbywa się głównie poprzez konfigurację OR-matrycy i inwerterów. Znajduje zastosowanie tam, gdzie wymagana jest mniej skomplikowana logika, a prostota implementacji jest priorytetem.
+    - **PAL (Programmable Array Logic):** PAL składa się głównie z OR-matrice (macierzy sumy logicznej) i inwerterów, a wejścia AND są stałe. Programowanie odbywa się głównie poprzez konfigurację OR-matrycy i inwerterów. Znajduje zastosowanie tam, gdzie wymagana jest mniej skomplikowana logika, a prostota implementacji jest priorytetem.
 
-- Komórkowe układy programowalne:
+    **Komórkowe układy programowalne**:
 
-  - **SPLD (Simple Programmable Logic Device):** SPLD to prosty, programowalny układ logiczny, który może być używany do tworzenia prostych kombinacyjnych i sekwencyjnych funkcji logicznych. Często stosowany w aplikacjach, gdzie potrzebna jest mała ilość logiki programowalnej.
+    - **SPLD (Simple Programmable Logic Device):** SPLD to prosty, programowalny układ logiczny, który może być używany do tworzenia prostych kombinacyjnych i sekwencyjnych funkcji logicznych. Często stosowany w aplikacjach, gdzie potrzebna jest mała ilość logiki programowalnej.
 
-  - **CPLD (Complex Programmable Logic Device):** CPLD to bardziej zaawansowany programowalny układ logiczny niż SPLD. Składa się z wielu makrokomórek logicznych, które mogą być konfigurowane do realizacji złożonych funkcji. Wykorzystywany w bardziej złożonych układach cyfrowych, które wymagają większej ilości logiki programowalnej.
+    - **CPLD (Complex Programmable Logic Device):** CPLD to bardziej zaawansowany programowalny układ logiczny niż SPLD. Składa się z wielu makrokomórek logicznych, które mogą być konfigurowane do realizacji złożonych funkcji. Wykorzystywany w bardziej złożonych układach cyfrowych, które wymagają większej ilości logiki programowalnej.
 
-  - **FPGA (Field-Programmable Gate Array):** FPGA to najbardziej elastyczny rodzaj programowalnego układu cyfrowego. Składa się z wielu konfigurowalnych bloków logicznych oraz elementów interkonekcyjnych, co pozwala na tworzenie niemal dowolnej struktury logicznej. Stosowany w aplikacjach, gdzie wymagana jest duża elastyczność i możliwość rekonfiguracji układu.
+    - **FPGA (Field-Programmable Gate Array):** FPGA to najbardziej elastyczny rodzaj programowalnego układu cyfrowego. Składa się z wielu konfigurowalnych bloków logicznych oraz elementów interkonekcyjnych, co pozwala na tworzenie niemal dowolnej struktury logicznej. Stosowany w aplikacjach, gdzie wymagana jest duża elastyczność i możliwość rekonfiguracji układu.
   
 # Metody analizy i syntezy układów cyfrowych
 
@@ -84,15 +82,16 @@ W odróżnieniu od programowalnych mikroprocesorów, w tym przypadku programowan
 
 **Synteza układów cyfrowych:**
 
-1. **Logika programowalna:** Umożliwia konfigurację układów za pomocą programowalnych układów logicznych (PLD) lub układów FPGA (Field-Programmable Gate Array). Programowanie tych układów pozwala na dostosowywanie ich funkcjonalności do konkretnych wymagań.
+1. **Układy programowalne:** Umożliwia konfigurację układów za pomocą programowalnych układów logicznych (PLD) lub układów FPGA (Field-Programmable Gate Array). Programowanie tych układów pozwala na dostosowywanie ich funkcjonalności do konkretnych wymagań.
 
 2. **Języki opisu sprzętu (HDL):** Synteza HDL (Hardware Description Language) umożliwia opisanie funkcjonalności układu w formie programu, który może zostać przetworzony na fizyczny układ. Popularnymi językami HDL są VHDL i Verilog.
 
 3. **Automatyczne narzędzia projektowe:** Narzędzia CAD (Computer-Aided Design) pozwalają na automatyczne generowanie struktury układów cyfrowych na podstawie opisu funkcjonalnego. Te narzędzia potrafią optymalizować rozkład bramek logicznych, ścieżki sygnałowe i inne parametry układu.
 
-4. **Techniki optymalizacyjne:** W trakcie syntezy stosuje się różne techniki optymalizacyjne, takie jak minimalizacja liczby bramek logicznych, optymalizacja czasu propagacji sygnałów, czy minimalizacja zużycia energii.
+4. **Generacja układów ASIC:** Układy specjalizowane (ASIC - Application-Specific Integrated Circuit) są projektowane na potrzeby konkretnego zastosowania. Proces projektowania ASIC obejmuje fazę syntezy, w której opis funkcjonalny jest przekształcany w fizyczną strukturę układu. 
 
-5. **Generacja układów ASIC:** Układy specjalizowane (ASIC - Application-Specific Integrated Circuit) są projektowane na potrzeby konkretnego zastosowania. Proces projektowania ASIC obejmuje fazę syntezy, w której opis funkcjonalny jest przekształcany w fizyczną strukturę układu. 
+6. **Techniki optymalizacyjne:** W trakcie syntezy stosuje się różne techniki optymalizacyjne, takie jak minimalizacja liczby bramek logicznych, optymalizacja czasu propagacji sygnałów, czy minimalizacja zużycia energii.
+
 
 # Typowe układy o różniej skali integracji i przykłady zastosowań
 
