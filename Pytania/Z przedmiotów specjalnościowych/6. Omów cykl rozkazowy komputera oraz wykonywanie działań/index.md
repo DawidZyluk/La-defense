@@ -4,16 +4,19 @@
 
 Cykl rozkazowy komputera to sekwencja kroków, które są wykonywane przez procesor w celu przetworzenia pojedynczego rozkazu. Podstawowe etapy cyklu rozkazowego to:
 
-1. **Pobranie Rozkazu (Fetch):**
+1. **pobranie instrukcji z pamięci – instruction fetch (IF):**
    - Procesor pobiera kolejny rozkaz z pamięci operacyjnej (RAM) lub pamięci podręcznej instrukcji (Cache) do rejestrów sterujących.
 
-2. **Dekodowanie Rozkazu (Decode):**
+2. **zdekodowanie instrukcji – instruction decode (ID):**
    - Pobrany rozkaz jest dekodowany, co oznacza, że procesor interpretuje, jaka operacja powinna być wykonana.
 
-3. **Wykonanie Operacji (Execute):**
+3. **wykonanie instrukcji – ang. execute (EX):**
    - Procesor wykonuje operację związana z zdekodowanym rozkazem. Może to obejmować operacje arytmetyczne, logiczne, przenoszenie danych, skoki, itp.
 
-4. **Zapisanie Wyników (Write Back):**
+4. **dostęp do pamięci – ang. memory access (MEM)**
+    - Dostęp do pamięci (memory access) to proces odczytu lub zapisu danych w pamięci komputerowej, umożliwiający programom przechowywanie i pobieranie informacji.
+
+5. **Zapisanie Wyników (Write Back):**
    - Jeśli operacja generuje wyniki, są one zapisywane w odpowiednich rejestrach lub w pamięci.
 
 ---

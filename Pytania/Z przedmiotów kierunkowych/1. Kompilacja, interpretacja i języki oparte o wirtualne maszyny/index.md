@@ -4,59 +4,48 @@
 
 **Definicja:** Kompilacja to proces przekształcania kodu źródłowego napisanego w języku programowania na kod maszynowy lub kod pośredni, który może być później wykonywany przez komputer.
 
-**Proces:**
-1. **Analiza leksykalna i składniowa:** 
-2. **Optymalizacja:** 
-3. **Generowanie kodu pośredniego:** 
-4. **Generowanie kodu maszynowego:** 
-
 **Pełny proces:**
-1. Analiza leksykalna
-2. Analiza składnionwa
-3. Semantyczna analiza
-4. Optymalizacja 
-5. Generowanie kodu pośredniego
-6. Optymalizacja kodu pośredniego 
-7. Generowanie kodu maszynowego
-8. Linkowanie 
-9. Generowanie pliku wykonalnego
+1. **Analiza leksykalna**: Lekser dzieli kod źródłowy na tokeny oraz usuwa białe znaki
+2. **Analiza składnionwa**: Parser tworzy drzewo składniowe w oparciu o tokeny oraz sprawdza, czy kod źródłowy jest poprawny gramatycznie
+3. **Semantyczna analiza**: Sprawdzenie poprawności operacji, typów danych oraz zakresów zmiennych
+4. **Optymalizacja**: poprawienie wydajności kodu poprzez eliminację niepotrzebnych lub redundanckich fragmentów.
+5. **Generowanie kodu pośredniego**: Tworzony jest kod pośredni, który jest niezależny od konkretnej platformy sprzętowej.
+6. **Optymalizacja kodu pośredniego**: poprawienie wydajności kodu poprzez eliminację niepotrzebnych lub redundanckich fragmentów.
+7. **Generowanie kodu maszynowego**: dostosowanego do konkretnej architektury procesora. Każda instrukcja kodu pośredniego jest mapowana z odpowiadającą instrukcją danego procesora.
+8. **Linkowanie**: Proces łączenia modułów programu w jedną całość. Przypisywanie adresów pamięci.
+9. **Generowanie pliku wykonalnego**: Tworzenie pliku, który może być uruchomiony na docelowej platformie.
 
-**Zalety:**
-- **Wydajność:** Kod maszynowy jest zoptymalizowany pod kątem konkretnej platformy.
-- **Bezpieczeństwo:** Ostateczny kod jest trudniejszy do analizy i modyfikacji.
 
 ## Interpretacja:
 
-**Definicja:** Interpretacja to proces bezpośredniego wykonywania kodu źródłowego przez interpreter, który jest programem czytającym i wykonującym kod źródłowy.
+Interpretacja jest alternatywnym podejściem do wykonania kodu programu, które polega na natychmiastowym wykonywaniu kodu źródłowego bez wcześniejszego etapu kompilacji. Oto dokładny opis procesu interpretacji:
 
-**Proces:**
-1. **Analiza leksykalna:** Tokeny są identyfikowane.
-2. **Interpretacja:** Kod jest natychmiast wykonywany w czasie rzeczywistym, bez konieczności generowania odrębnego pliku wynikowego.
-
-**Zalety:**
-- **Prostota:** Nie wymaga oddzielnego etapu kompilacji.
-- **Łatwość debugowania:** Błędy są łatwiejsze do zidentyfikowania w trakcie interpretacji.
+1. **Analiza leksykalna**: Lekser dzieli kod źródłowy na tokeny oraz usuwa białe znaki
+2. **Analiza składnionwa**: Parser tworzy drzewo składniowe w oparciu o tokeny oraz sprawdza, czy kod źródłowy jest poprawny gramatycznie
+3. **Wykonywanie kodu**: Interpreter przetwarza i wykonuje instrukcje programu na bieżąco.
+Interpreter zarządza danymi, zmiennymi i stanem programu w trakcie jego wykonywania.
+4. **Obsługa błędów**: Interpreter monitoruje i obsługuje błędy w trakcie wykonywania kodu.
+5. **Debugowanie**: Interpreter może dostarczać narzędzia do śledzenia wykonania programu, umożliwiając programistom zidentyfikowanie błędów.
+6. **Dynamiczne typowanie**: Interpreter automatycznie przypisuje typy zmiennym w trakcie wykonywania programu.
+7. **Efektywność**: Interpretacja jest często mniej efektywna niż kompilacja, ponieważ kod jest wykonywany bezpośrednio, co może prowadzić do pewnych opóźnień.
 
 ## Języki oparte o wirtualne maszyny:
 
-**Definicja:** Języki oparte o wirtualne maszyny to języki programowania, które są kompilowane do kodu pośredniego zamiast bezpośrednio do kodu maszynowego danego komputera. Ten kod pośredni jest później interpretowany lub kompilowany przez wirtualną maszynę, co pozwala na uruchamianie tego samego kodu na różnych platformach sprzętowych.
+**Wirtualna Maszyna (VM):** Jest to abstrakcyjna maszyna, która symuluje funkcje rzeczywistej maszyny komputerowej. Oferuje zestaw instrukcji i środowisko wykonawcze dla kodu pośredniego.
 
-**Proces:**
-1. **Kompilacja:** Kod źródłowy jest kompilowany do kodu bajtowego.
-2. **Wykonywanie na wirtualnej maszynie:** Kod bajtowy jest wykonywany przez wirtualną maszynę, która tłumaczy go na kod maszynowy danego systemu.
+1. **Kompilowane do kodu pośredniego** zamiast bezpośrednio do kodu maszynowego danego komputera. 
+2. Kod pośredni jest później **interpretowany lub kompilowany** przez wirtualną maszynę, 
+3.  **Uruchamianie tego samego kodu na różnych platformach sprzętowych**. 
 
-**Przykłady:**
-- **Java:** Kompilacja do bajtowego kodu Java, uruchamianego na maszynie wirtualnej Java (JVM).
-- **C#:** Kompilacja do Common Intermediate Language (CIL), uruchamianego na platformie .NET.
 
-### Podobieństwa:
+4. **Kompilacja JIT i AOT**: W niektórych przypadkach kod pośredni może być kompilowany Just-In-Time (JIT) lub Ahead-of-Time (AOT) na maszynie docelowej.
 
-1. **Abstrakcja od sprzętu:** Zarówno kompilacja, jak i języki oparte o wirtualne maszyny zapewniają abstrakcję od konkretnego sprzętu, co pozwala na przenośność kodu między różnymi platformami.
-2. **Wydajność:** Obydwa podejścia mogą osiągnąć wysoką wydajność, chociaż kompilacja bezpośrednio do kodu maszynowego może być bardziej zoptymalizowana.
+5. **Automatyczne zarządzanie pamięcią (Garbage collector)**: Wirtualna maszyna często oferuje mechanizmy automatycznego zarządzania pamięcią, ułatwiające programistom pracę.
 
-### Różnice:
 
-1. **Czas wykonania:** Kompilacja wymaga odrębnego etapu przed wykonaniem, podczas gdy interpretacja i języki oparte o wirtualne maszyny umożliwiają natychmiastowe wykonanie.
-2. **Portowność:** Języki oparte o wirtualne maszyny są bardziej przenośne, ponieważ kod źródłowy jest kompilowany do kodu pośredniego, który może być wykonany na różnych platformach.
+6. **Wyższe zużycie zasobów**: Wirtualna maszyna wprowadza pewien narzut związany z interpretacją lub kompilacją JIT, co może skutkować wyższym zużyciem zasobów.
 
-Podsumowując, kompilacja, interpretacja i języki oparte o wirtualne maszyny oferują różne podejścia do procesu tłumaczenia kodu źródłowego na kod maszynowy. Wybór między nimi zależy od wymagań projektu, priorytetów wydajnościowych oraz przenośności kodu.
+**Przykłady języków:**
+  - **Java:** Kompilacja do bajtowego kodu Java, uruchamianego na maszynie wirtualnej Java (JVM).
+  - **C#:** Kompilacja do Common Intermediate Language (CIL), uruchamianego na platformie .NET.
+  - **Python:** Często używa wirtualnej maszyny Python (CPython), gdzie kod źródłowy jest kompilowany do bajtowego kodu Pyc i interpretowany przez VM.

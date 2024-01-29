@@ -4,11 +4,19 @@
 
 Klasyfikacja układów i systemów automatyki może opierać się na różnych kryteriach, takich jak stopień zautomatyzowania, obszar zastosowań, struktura czy też złożoność. Poniżej znajdziesz ogólną klasyfikację:
 
+```
+Der Schoß eines Straußes, 
+zła ość, 
+RP, 
+ZK, 
+ISO
+```
+
  **Podział ze względu na Stopień Zautomatyzowania:**
    - **Systemy Ręczne (Manualne):** Operacje wykonywane są ręcznie przez operatora bez wsparcia automatyzacji.
    - **Systemy Półautomatyczne:** Wprowadzenie pewnych automatycznych elementów ułatwiających operacje, ale nadal wymagające interwencji człowieka.
    - **Systemy Automatyczne:** Pełne zautomatyzowanie operacji bez potrzeby stałego nadzoru człowieka.
-
+  
  **Podział ze względu na Obszar Zastosowań:**
    - **Automatyka Przemysłowa:** Zastosowania w przemyśle, produkcji i procesach produkcyjnych.
    - **Automatyka Budynkowa:** Kontrola systemów w budynkach, takich jak klimatyzacja, oświetlenie, bezpieczeństwo.
@@ -37,59 +45,56 @@ Klasyfikacja układów i systemów automatyki może opierać się na różnych k
    - **Systemy Otwarte:** Bezpośrednia interakcja operatora z systemem.
    - **Systemy Zamknięte:** Automatyczna regulacja bez ciągłego nadzoru operatora.
 
-Te klasyfikacje są ogólne, a konkretna klasyfikacja może zależeć od konkretnego kontekstu i obszaru zastosowań systemu automatyki.
+
 
 ---
 
 ### Podstawy Teoretyczne Systemów i Układów:
 
-1. **Definicja Systemu:**
-   - **System** to zbiór elementów współpracujących ze sobą, tworzących całość, która ma określony cel lub realizuje określone zadanie.
+1. **Definicja Systemu:** to zbiór elementów współpracujących ze sobą, tworzących całość, która ma określony cel lub realizuje określone zadanie.
 
-2. **Struktura Systemu:**
-   - **Struktura** systemu określa sposób, w jaki poszczególne elementy są ze sobą powiązane i jak współdziałają.
+2. **Struktura Systemu:** systemu określa sposób, w jaki poszczególne elementy są ze sobą powiązane i jak współdziałają.
 
-3. **Zasada Sprzężenia Zwrotnego:**
-   - **Sprzężenie zwrotne** to proces, w którym wynik działania systemu wpływa na dalsze działanie tego systemu. Może być dodatnie (wzmacniające) lub ujemne (tłumienie).
+3. **Zasada Sprzężenia Zwrotnego:** to proces, w którym wynik działania systemu wpływa na dalsze działanie tego systemu. Może być dodatnie (wzmacniające) lub ujemne (tłumienie).
 
-4. **Modelowanie Systemów:**
-   - **Modelowanie systemów** to proces tworzenia abstrakcyjnych reprezentacji rzeczywistych systemów, które pozwalają na analizę, symulację i zrozumienie ich działania.
+4. **Zmienne Stanu:** W analizie systemów często wykorzystuje się zmienne stanu, które opisują aktualny stan systemu i ewolucję w czasie.
 
-5. **Zmienne Stanu:**
-   - W analizie systemów często wykorzystuje się **zmienne stanu**, które opisują aktualny stan systemu i ewolucję w czasie.
+### Układ automatycznej regulacji (UAR)
+
+<p align="center">
+<img src="image-1.png">
+</p>
+
+**Obiekt** - może być wszystko co chcemy analizować np. układ RLC, układy mechaniczne, cieplne elektryczne itp. \
+**Regulator** - ma za zadanie wygenerować sygnał sterujący obiektem w oparciu o sygnał uchybu otrzymany przez sumator \
+$\textit{\textbf{w(t)}}$ - wartość zadana tj. wartość, którą chcemy uzyskać \
+$\textit{\textbf{y(t)}}$ - wartość mierzona \
+$\textit{\textbf{e(t)}}$ - uchyb \
+$\textit{\textbf{u(t)}}$ - sygnał sterujący 
+
+
 
 ### Analiza Systemów:
 
-1. **Analiza Dynamiczna:**
-   - **Analiza dynamiczna** systemu skupia się na badaniu jego zachowania w czasie, uwzględniając zmiany i ewolucję stanów.
+1. **Analiza Dynamiczna:** systemu skupia się na badaniu jego zachowania w czasie, uwzględniając zmiany i ewolucję stanów.
 
-2. **Analiza Stabilności:**
-   - **Stabilność systemu** oznacza, że po pewnym czasie system osiąga stan równowagi. Analiza stabilności jest ważna, szczególnie w systemach regulacyjnych.
+2. **Analiza Stabilności:** oznacza, że po pewnym czasie system osiąga stan równowagi. Analiza stabilności jest ważna, szczególnie w systemach regulacyjnych.
 
-3. **Analiza Częstotliwościowa:**
-   - **Analiza częstotliwościowa** pozwala na zrozumienie, jak system reaguje na różne częstotliwości sygnałów wejściowych.
+3. **Analiza Częstotliwościowa:** pozwala na zrozumienie, jak system reaguje na różne częstotliwości sygnałów wejściowych.
 
-4. **Analiza Czasowa:**
-   - **Analiza czasowa** koncentruje się na badaniu zmian w systemie w zależności od czasu.
+4. **Analiza Czasowa:** koncentruje się na badaniu zmian w systemie w zależności od czasu.
 
 ### Synteza Systemów:
 
-1. **Projektowanie Systemu:**
-   - **Projektowanie systemu** polega na określeniu struktury i parametrów systemu, aby osiągnąć określony cel lub spełnić zadane wymagania.
+1. **Projektowanie Systemu:** polega na określeniu struktury i parametrów systemu, aby osiągnąć określony cel lub spełnić zadane wymagania.
 
-2. **Synteza Układów:**
-   - **Synteza układów** obejmuje proces tworzenia fizycznej realizacji systemu na podstawie jego abstrakcyjnej koncepcji.
+2. **Synteza Układów:** obejmuje proces tworzenia fizycznej realizacji systemu na podstawie jego abstrakcyjnej koncepcji.
 
-3. **Optymalizacja Systemów:**
-   - **Optymalizacja systemów** polega na zoptymalizowaniu parametrów systemu tak, aby spełnić określone kryteria, na przykład minimalizacja kosztów, maksymalizacja wydajności.
+3. **Optymalizacja Systemów:** polega na zoptymalizowaniu parametrów systemu tak, aby spełnić określone kryteria, na przykład minimalizacja kosztów, maksymalizacja wydajności.
 
-4. **Implementacja:**
-   - **Implementacja systemu** to proces, w którym projektowany system lub układ jest rzeczywiście tworzony i wdrażany.
+4. **Implementacja:** to proces, w którym projektowany system lub układ jest rzeczywiście tworzony i wdrażany.
 
-5. **Testowanie i Ocena:**
-   - **Testowanie systemu** jest nieodzownym etapem, pozwalającym zweryfikować, czy system spełnia założone wymagania i działa zgodnie z oczekiwaniami.
-
-Analiza i synteza systemów są wzajemnie powiązanymi procesami, które obejmują badanie istniejących systemów, projektowanie nowych, a następnie wdrażanie i ocenę ich działania. W dziedzinie inżynierii systemów teoretyczne podstawy są kluczowe dla skutecznego projektowania i zarządzania złożonymi układami.
+5. **Testowanie i Ocena:** jest nieodzownym etapem, pozwalającym zweryfikować, czy system spełnia założone wymagania i działa zgodnie z oczekiwaniami.
 
 ---
 
@@ -114,5 +119,3 @@ Analiza i synteza systemów są wzajemnie powiązanymi procesami, które obejmuj
 #### 5. **Medycyna:**
    - **Automatyczne Systemy Diagnostyczne:** Systemy do monitorowania parametrów zdrowotnych.
    - **Systemy Pomocnicze:** Automatyczne pompy do podawania leków, sztuczne protezy.
-
-Automatyka jest integralną częścią wielu dziedzin życia, zapewniając optymalizację procesów, zwiększenie efektywności i poprawę jakości. W przemyśle, automatyka umożliwia masową produkcję, a w życiu codziennym - wygodę i bezpieczeństwo. W ciągłym rozwoju technologii automatyki pojawiają się nowe metody analizy, syntezy i zastosowań, co wpływa na postęp w wielu dziedzinach.
