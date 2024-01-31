@@ -1,15 +1,35 @@
 # Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów, metody projektowania
 
-**Cyfrowy układ sekwencyjny**, który w reakcji na ciąg próbek sygnału dyskretnego podanego na wejście odpowiada ciągiem próbek wyjściowych, zgodnie z deterministyczną (zdarzeniu jednoznacznie przypisuje konkretny stan) funkcją przejścia, która może być liniowa lub nieliniowa.
+**Cyfrowy układ sekwencyjny**, który w reakcji na ciąg próbek **sygnału dyskretnego** podanego na wejście odpowiada ciągiem próbek wyjściowych, zgodnie z **deterministyczną funkcją przejścia** (zdarzeniu jednoznacznie przypisuje konkretny stan), która może być liniowa lub nieliniowa.
 
 W przypadku filtru liniowego jego właściwości całkowicie określa dyskretna odpowiedź impulsowa, a sygnał wyjściowy jest splotem dyskretnym sygnału wejściowego z tą odpowiedzią. W dziedzinie częstotliwości właściwości takiego filtru opisuje transmitancja.
 
 Zachowanie dynamiczne filtru nieliniowego jest zazwyczaj bardziej skomplikowane, dlatego odpowiedź impulsowa takiego filtru nie opisuje wszystkich jego właściwości i nie wystarcza do przewidzenia reakcji filtru na dowolny sygnał wejściowy.
 
+Odpowiedź impulsowa w filtrach cyfrowych odnosi się do reakcji filtra na impuls jednostkowy (delta Diraca) podany na jego wejście. Jest to fundamenty element analizy i projektowania filtrów cyfrowych. Odpowiedź impulsowa jest szczególnie użyteczna, ponieważ pozwala zobaczyć, jak filtr reaguje na bardzo krótki, impulsowy sygnał, co daje informacje na temat charakterystyki częstotliwościowej i czasowej filtru.
+
+Odpowiedź impulsowa jest również używana do uzyskiwania charakterystyk filtru w dziedzinie częstotliwości za pomocą transformaty Fouriera lub transformaty Z, co pozwala na analizę jego właściwości w dziedzinie częstotliwości.
+
+Częstotliwość Nyquista jest równa połowie częstotliwości próbkowania:
+
 Filtry cyfrowe można podzielić na dwie grupy:
 
 - Filtry o skończonej odpowiedzi impulsowej (SOI, ang. finite impulse response – FIR)
 - Filtry o nieskończonej odpowiedzi impulsowej (NOI, ang. infinite impulse response – IIR)
+
+$f_{N}=f_{s}/2$  albo  $f_{N}=1/{2T_{s}}$
+
+![Alt text](image-2.png)
+
+### Reakcja na częstotliwość
+
+![Alt text](image.png)
+
+### Charakterystyka fazowa
+
+![Alt text](image-1.png)
+![Alt text](image-6.png)
+![Alt text](image-7.png)
 
 ## Rodzaje filtrów
 
@@ -48,6 +68,7 @@ Do wad filtrów IIR należy zaliczyć:
 - Filtry IIR są znacznie bardziej wrażliwe na błędy zaokrągleń: zaokrąglenia wartości współczynników mogą znacząco zmienić charakterystykę, a zaokrąglenia wartości sygnału i wyników pośrednich wprowadzają szum, który może się akumulować.
 - Nie można ich zaimplementować jako filtrów o liniowej fazie, czyli takich, które wprowadzają takie samo opóźnienie grupowe dla wszystkich składowych częstotliwościowych przepuszczanego sygnału.
 - Z uwagi na rosnącą wydajność układów cyfrowych i procesorów sygnałowych, filtry IIR nie są obecnie tak chętnie wykorzystywane jak dawniej, a największą popularnością cieszą się filtry FIR, które nie mają wyżej wymienionych wad.
+
 
 ## Metody projektowania
 
@@ -97,3 +118,11 @@ Rodzaje filtrów cyfrowych można podzielić na kilka głównych kategorii, zale
 
 8.  **Filtr wielopoziomowy (Multirate filter):**
  Zawiera więcej niż jedno pasmo przenoszenia i wykorzystuje techniki wielopoziomowego przetwarzania sygnałów.
+
+9. **Filtr grzebieniowy**: Jego działanie polega na dodawaniu sygnału do jego opóźnionej wersji, co powoduje wzmacnianie, bądź wygaszanie poszczególnych składowych częstotliwościowych poprzez zjawisko interferencji.
+
+<p align="center"> 
+  <img src="image-3.png"/>
+</p>
+
+![Alt text](image-5.png)

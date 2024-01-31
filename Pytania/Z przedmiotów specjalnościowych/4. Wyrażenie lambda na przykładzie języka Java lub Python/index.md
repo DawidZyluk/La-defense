@@ -5,20 +5,17 @@
 Wyrażenia lambda w Javie wprowadzono w Java 8 i stanowią skróconą i bardziej zwięzłą formę interfejsów funkcyjnych. Oto przykład wyrażenia lambda w Javie:
 
 ```java
-// Przykładowy interfejs funkcyjny
-interface Dodawanie {
-    int dodaj(int a, int b);
-}
+import java.util.ArrayList;
 
-public class PrzykladLambda {
-    public static void main(String[] args) {
-        // Użycie wyrażenia lambda do zaimplementowania metody interfejsu funkcyjnego
-        Dodawanie dodawanie = (a, b) -> a + b;
-
-        // Wywołanie metody przy użyciu wyrażenia lambda
-        int wynik = dodawanie.dodaj(3, 5);
-        System.out.println("Wynik dodawania: " + wynik);
-    }
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(9);
+    numbers.add(8);
+    numbers.add(1);
+    numbers.forEach( (n) -> { System.out.println(n); } );
+  }
 }
 ```
 

@@ -18,9 +18,7 @@ Układ FPGA Artix-7 jest jednym z produktów firmy Xilinx, należącym do serii 
 
 6. **Urządzenia Peryferyjne i Bloki I/O:** Artix-7 FPGA oferuje różnorodne bloki wejścia/wyjścia (I/O) i peryferia, które umożliwiają komunikację z zewnętrznymi urządzeniami.
 
-7. **Hierarchiczna Architektura:** Artix-7 jest zorganizowany hierarchicznie, co pozwala na łatwe projektowanie i zarządzanie złożonymi projektami FPGA.
-
-8. **Kontroler Konfiguracji i Pamięć Konfiguracyjna:** Zawiera kontroler konfiguracji i pamięć konfiguracyjną, która umożliwia programowanie układu FPGA zgodnie z potrzebami użytkownika.
+7. **Kontroler Konfiguracji i Pamięć Konfiguracyjna:** Zawiera kontroler konfiguracji i pamięć konfiguracyjną, która umożliwia programowanie układu FPGA zgodnie z potrzebami użytkownika.
 
 ### Zastosowania Artix-7 FPGA:
 

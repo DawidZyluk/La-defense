@@ -118,6 +118,8 @@ Przykłady języków:
 
 rodzina paradygmatów programowania, które nie są z natury imperatywne. W przeciwieństwie do programów napisanych imperatywnie, programista opisuje warunki, jakie musi spełniać końcowe rozwiązanie (co chcemy osiągnąć), a nie szczegółową sekwencję kroków, które do niego prowadzą (jak to zrobić).
 
+HTML, SQL
+
 ### Programowanie funkcyjne:
 
 1. **Funkcje jako Podstawowe Jednostki:**
