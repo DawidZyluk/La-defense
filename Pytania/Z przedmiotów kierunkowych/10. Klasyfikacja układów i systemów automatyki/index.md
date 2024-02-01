@@ -57,7 +57,11 @@ ISO
 
 3. **Zasada Sprzężenia Zwrotnego:** to proces, w którym wynik działania systemu wpływa na dalsze działanie tego systemu. Może być dodatnie (wzmacniające) lub ujemne (tłumienie).
 
-4. **Zmienne Stanu:** W analizie systemów często wykorzystuje się zmienne stanu, które opisują aktualny stan systemu i ewolucję w czasie.
+4. **Układ Dynamiczny:** to system, którego zachowanie zmienia się w czasie. Charakteryzują się zdolnością do reagowania na wejścia, ewoluowania w czasie oraz wykazywania różnych stanów równowagi lub trajektorii w odpowiedzi na różne warunki początkowe i sygnały wejściowe. Przykłady układów dynamicznych obejmują układy mechaniczne, elektryczne, biologiczne czy ekonomiczne.
+
+5. **Układ Statyczny:** to system, którego zachowanie nie zmienia się w czasie. Ich charakterystyka jest stała i nie zależy od czasu, a odpowiedź na dane wejście jest natychmiastowa i deterministyczna. Przykłady układów statycznych obejmują proste funkcje matematyczne, operacje algebraiczne, filtry statyczne czy układy o stałych parametrach. Układy statyczne są używane do opisu prostych zależności między wejściem a wyjściem bez uwzględniania elementów dynamicznych.
+
+6. **Stabilność układu:** niezbędny warunek pracy układu automatycznej regulacji mówiący o tym, że układ po wyprowadzeniu go ze stanu równowagi sam powraca do tego stanu. Ponieważ stan równowagi może być różnie interpretowany stosuje się także definicję stabilności Laplace’a, która mówi, że układ liniowy jest stabilny, jeżeli jego odpowiedź na wymuszenie (zakłócenie) o ograniczonej wartości jest ograniczona.
 
 ### Układ automatycznej regulacji (UAR)
 
@@ -76,13 +80,47 @@ $\textit{\textbf{u(t)}}$ - sygnał sterujący
 
 ### Analiza Systemów:
 
-1. **Analiza Dynamiczna:** systemu skupia się na badaniu jego zachowania w czasie, uwzględniając zmiany i ewolucję stanów.
+Analiza systemów automatyki obejmuje szereg metod służących zrozumieniu, ocenie i optymalizacji działania systemów sterowania. Oto kilka głównych metod analizy systemów automatyki:
 
-2. **Analiza Stabilności:** oznacza, że po pewnym czasie system osiąga stan równowagi. Analiza stabilności jest ważna, szczególnie w systemach regulacyjnych.
+1. **Analiza Czasowa:**
+   - **Opis:** Ocena czasowych właściwości systemu, takich jak czas ustalania, czas przejścia, czy czas stabilizacji.
+   - **Metody:** Odpowiedzi skokowe, odpowiedzi impulsowe, analiza czasowa przejściowa.
 
-3. **Analiza Częstotliwościowa:** pozwala na zrozumienie, jak system reaguje na różne częstotliwości sygnałów wejściowych.
+2. **Analiza Częstotliwościowa:**
+   - **Opis:** Badanie charakterystyk częstotliwościowych systemu, czyli jego reakcji na sygnały sinusoidalne o różnych częstotliwościach.
+   - **Metody:** Transmitancja, funkcje Bodego, diagram Nyquista, diagram Nyquista-Nicholsa.
 
-4. **Analiza Czasowa:** koncentruje się na badaniu zmian w systemie w zależności od czasu.
+3. **Analiza Stabilności:**
+   - **Opis:** Badanie, czy system jest stabilny, czyli czy jego odpowiedź na zakłócenia ogranicza się w czasie.
+   - **Metody:** Kryterium Nyquista, kryterium Michajłowa, kryterium Hurwitza.
+
+4. **Analiza Zakłóceń:**
+   - **Opis:** Ocena wpływu zakłóceń na zachowanie systemu i opracowanie strategii ich redukcji.
+   - **Metody:** Analiza zakłóceń statycznych i dynamicznych, projektowanie systemów kompensacyjnych.
+
+5. **Analiza Robustyczności:**
+   - **Opis:** Badanie, jak system zachowuje się w obliczu zmian parametrów, niepewności czy fluktuacji.
+   - **Metody:** Projektowanie systemów odpornych, analiza błędów modelowania, analiza niepewności.
+
+6. **Analiza Optymalizacyjna:**
+   - **Opis:** Optymalizacja parametrów systemu w celu osiągnięcia określonych celów, takich jak maksymalna stabilność, minimalne przeregulowanie, czy maksymalna szybkość odpowiedzi.
+   - **Metody:** Optymalizacja matematyczna, algorytmy optymalizacyjne.
+
+7. **Symulacje Komputerowe:**
+   - **Opis:** Użycie modeli matematycznych w celu przewidzenia zachowania systemu w różnych warunkach.
+   - **Metody:** Symulacje numeryczne, modelowanie komputerowe, analiza wyników symulacji.
+
+8. **Analiza Zawodności:**
+   - **Opis:** Badanie niezawodności systemu, tj. jego zdolności do utrzymania zadanej funkcji pomimo zakłóceń czy awarii.
+   - **Metody:** Analiza drzew błędów, analiza ryzyka, analiza dostępności.
+
+9. **Analiza Odporności na Awarie (Fault Tolerance):**
+   - **Opis:** Zrozumienie, jak system radzi sobie w obliczu awarii i jak szybko i skutecznie powraca do normalnego działania.
+   - **Metody:** Projektowanie systemów redundanckich, analiza strategii odtwarzania.
+
+10. **Analiza Kosztów i Korzyści:**
+    - **Opis:** Ocena kosztów i korzyści związanych z wdrożeniem i utrzymaniem systemu automatyki.
+    - **Metody:** Analiza ekonomiczna, analiza kosztów cyklu życia.
 
 ### Synteza Systemów:
 
