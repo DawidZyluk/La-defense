@@ -1,8 +1,6 @@
 # Objaśnij znaczenie zapisu O(n) oraz scharakteryzuj wpływ doboru struktury danych na czas wykonania programu.
 
-### O(n) - Złożoność Czasowa Algorytmu:
-
-Zapis O(n) to forma zapisu złożoności czasowej algorytmu, gdzie "O" oznacza notację wielkiego O, a "n" reprezentuje rozmiar danych wejściowych. Złożoność czasowa O(n) oznacza, że czas wykonania algorytmu rośnie liniowo wraz z rozmiarem danych wejściowych. Innymi słowy, im większe "n", tym więcej czasu algorytm będzie potrzebować do wykonania.
+Zapis O(n) -  miara określająca zachowanie wartości funkcji wraz ze wzrostem jej argumentów. odnosi się do notacji wielomianowej (czasowej lub przestrzennej) używanej w analizie algorytmów. Oznacza to górną granicę złożoności czasowej lub przestrzennej algorytmu w zależności od rozmiaru danych wejściowych. 
 
 <p align="center"> 
   <img src="time.webp" style="max-height: 380"/>
@@ -14,19 +12,44 @@ Zapis O(n) to forma zapisu złożoności czasowej algorytmu, gdzie "O" oznacza n
 
 Przykłady złożoności czasowej:
 
-- O(1): Stała złożoność czasowa (czas stały, niezależny od rozmiaru danych).
-- O(log n): Logarytmiczna złożoność czasowa.
-- O(n log n): Złożoność czasowa dominowana przez iloczyn rozmiaru danych i logarytmu tego rozmiaru.
-- O(n): Liniowa złożoność czasowa.
-- O(n^2): Kwadratowa złożoność czasowa.
-- O(2^n): Wykładnicza złożoność czasowa.
+- $O(1)$, Stała złożoność czasowa 
+  - Dostęp do indeksu tablicy (int a = ARR[5])
+  - Wstawianie węzła w liście 
+  - Push i Pop elementów na stosie
+  - Wstawianie i usuwanie z kolejki
+  - Przeskok do następnego/poprzedniego elementu na liście podwójnie połączonej
+
+- $O(log \ n)$, Logarytmiczna złożoność czasowa.
+  - Binary Search
+  - Znajdowanie największej/najmniejszej liczby w BST
+  - Niektóre algorytmy „Dziel i rządź” 
+
+- $O(n)$, Liniowa złożoność czasowa.
+  - Przechodzenie przez tablicę
+  - Przechodzenie przez listę połączoną
+  - Usunięcie określonego elementu z połączonej listy (nieposortowanej)
+  - Porównywanie dwóch ciągów znaków
+  - Sprawdzam Palindrom
+  
+- $O(n\ log \ n)$, Iloczyn rozmiaru danych i logarytmu tego rozmiaru.
+  - Merge Sort
+  - Heap Sort
+  - Quick Sort
+
+- $O(n^2)$, Kwadratowa złożoność czasowa.
+  - Bubble Sort
+  - Insertion Sort
+  - Selection Sort
+  - Przechodzenie 2D array
+
+- $O(2^n)$, Wykładnicza złożoność czasowa.
 
 ### Wpływ Doboru Struktury Danych na Czas Wykonania Programu:
 
 Dobór odpowiedniej struktury danych ma znaczący wpływ na czas wykonania programu. Oto kilka kwestii, które warto rozważyć:
 
 1. **Wyszukiwanie i Wstawianie:**
-   - Struktury danych, takie jak drzewa binarne, mogą umożliwić efektywne operacje wyszukiwania i wstawiania. Wyszukiwanie w drzewie binarnym ma złożoność $\log n$, co jest znacznie lepsze niż liniowe przeszukiwanie listy ($O(n)$).
+   - Struktury danych, takie jak drzewa binarne, mogą umożliwić efektywne operacje wyszukiwania i wstawiania. Wyszukiwanie w drzewie binarnym ma złożoność $\log n$, co jest znacznie lepsze niż liniowe przeszukiwanie listy $O(n)$.
 
 2. **Operacje na Końcu Struktury:**
    - Listy są efektywne do szybkich operacji na końcu struktury (np. dodawanie elementów na końcu). Operacje na końcu tablicy mogą wymagać przesunięcia wszystkich elementów, co jest bardziej kosztowne.

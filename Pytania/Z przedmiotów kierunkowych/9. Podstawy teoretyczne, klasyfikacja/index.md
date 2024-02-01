@@ -16,37 +16,41 @@
 
 1. **Ze względu na sposób przetwarzania informacji**:
 
-   - **Układy kombinacyjne** – układy „bez pamięci”, w których sygnały wyjściowe są zawsze takie same dla określonych sygnałów wejściowych;
+   - **Układy kombinacyjne** – układy „bez pamięci”, w których sygnały wyjściowe są zawsze takie same dla określonych sygnałów wejściowych; multiplekser, demultiplekser, koder, dekoder
    
-   - **Układy sekwencyjne** – układy „z pamięcią”, w których stan wyjść zależy nie tylko od aktualnego stanu wejść, ale również od stanów wcześniejszych.
+   - **Układy sekwencyjne** – układy „z pamięcią”, w których stan wyjść zależy nie tylko od aktualnego stanu wejść, ale również od stanów wcześniejszych. Układy asynchroniczne i synchroniczne (z zegarem)
    
 2. **Ze względu na technologie tranzystorów**:
 
     **Bipolarne**:
     
     - **TTL (Transistor-Transistor Logic):**
-      - TTL jest oparty na technologii tranzystorów bipolarnych, są używane do budowy układów logicznych.
       - szybkoś działania, ale wymaga więcej energii niż inne
       - stosunkowo niższy poziom szumów.
       - tanie 
+      - przełączanie stanów logicznych związane jest z przechodzeniem tranzystorów ze stanu nasycenia do zatkania i odwrotnie.
 
     - **ECL (Emitter Coupled Logic):**
-      - ECL używa tranzystorów bipolarnych połączonych emiterami. 
       - niskie opóźnienie propagacji
       - szybkość kosztem zużycia energii.
 
     - **I2L (Integrated Injection Logic):**
       - wprowadzenie nośników ładunku (iniekcji) do struktury tranzystorów.
-      - dobrą wydajność przy niższym zużyciu energii 
+      - dobrą wydajność przy niższym zużyciu energii. Szybkość TTL, zużycie energii na poziomie CMOS
       
     **Unipolarne (Tranzystory polowe, FET)**:
     - **NMOS i PMOS (N-type Metal-Oxide-Semiconductor i P-type Metal-Oxide-Semiconductor):**
       -  NMOS i PMOS to rodzaje technologii MOSFET (Metal-Oxide-Semiconductor Field-Effect Transistor), gdzie różnice polegają na typie domieszkowania (dodatnim dla PMOS i ujemnym dla NMOS).
-      - NMOS i PMOS są powszechnie używane w technologii CMOS, a ich wspólna implementacja pozwala na osiągnięcie niskiego zużycia energii przy zachowaniu dobrej szybkości działania.
+      
+      - NMOS używa aluminium (Al) a PMOS używa fosforu (P)
+      
+        ![Alt text](image.png)
+
+        - z kanałem zubożanym (z kanałem wbudowanym) – normalnie włączone
+        - z kanałem wzbogacanym (z kanałem indukowanym) – normalnie wyłączone
 
     - **CMOS (Complementary MOS):**
       - CMOS łączy NMOS i PMOS, tworząc komplementarne pary. To połączenie pozwala na minimalne zużycie energii w stanie statycznym.
-      - technologia do budowy bramek logicznych 
       - niskie zużycie energii 
       - dobrą skalowalność
    
@@ -74,9 +78,9 @@
 
 1. **Symulacje komputerowe:** Wykorzystywane są narzędzia do symulacji układów cyfrowych, które pozwalają na modelowanie zachowania układu podczas różnych scenariuszy działania. Symulacje umożliwiają przewidywanie wyników działania układu i identyfikowanie ewentualnych problemów przed implementacją fizyczną.
 
-2. **Analiza czasowo-przestrzenna:** Określa się, jakie są opóźnienia sygnałów i jak rozkładają się ścieżki sygnałowe w przestrzeni. Analiza czasowo-przestrzenna pozwala na optymalizację układu pod kątem czasu propagacji sygnałów i minimalizację zakłóceń.
+2. **Analiza czasowo-przestrzenna:** pozwala na optymalizację układu pod kątem **czasu propagacji** sygnałów i minimalizację zakłóceń. Określa się, jakie są **opóźnienia sygnałów** i jak rozkładają się ścieżki sygnałowe w przestrzeni. Analiza czasowo-przestrzenna 
 
-3. **Analiza sygnałów i widm:** Pozwala na zrozumienie charakterystyk sygnałów w układzie, w tym analizę zakłóceń, szumów, czy potencjalnych sygnałów niepożądanych. Analiza widmowa pozwala na identyfikację składowych częstotliwościowych w sygnałach.
+3. **Analiza sygnałów i widm:** Pozwala na zrozumienie **charakterystyk sygnałów** w układzie, w tym analizę zakłóceń, szumów, czy potencjalnych sygnałów niepożądanych. Analiza widmowa pozwala na identyfikację składowych częstotliwościowych w sygnałach.
 
 4. **Analiza zużycia energii:** Współczesne układy cyfrowe muszą być efektywne energetycznie. Analiza zużycia energii obejmuje określenie, ile energii zużywa układ podczas różnych operacji i w różnych trybach pracy.
 
@@ -88,9 +92,7 @@
 
 3. **Automatyczne narzędzia projektowe:** Narzędzia CAD (Computer-Aided Design) pozwalają na automatyczne generowanie struktury układów cyfrowych na podstawie opisu funkcjonalnego. Te narzędzia potrafią optymalizować rozkład bramek logicznych, ścieżki sygnałowe i inne parametry układu.
 
-4. **Generacja układów ASIC:** Układy specjalizowane (ASIC - Application-Specific Integrated Circuit) są projektowane na potrzeby konkretnego zastosowania. Proces projektowania ASIC obejmuje fazę syntezy, w której opis funkcjonalny jest przekształcany w fizyczną strukturę układu. 
-
-6. **Techniki optymalizacyjne:** W trakcie syntezy stosuje się różne techniki optymalizacyjne, takie jak minimalizacja liczby bramek logicznych, optymalizacja czasu propagacji sygnałów, czy minimalizacja zużycia energii.
+4. **Techniki optymalizacyjne:** W trakcie syntezy stosuje się różne techniki optymalizacyjne, takie jak minimalizacja liczby bramek logicznych, optymalizacja czasu propagacji sygnałów, czy minimalizacja zużycia energii.
 
 
 # Typowe układy o różniej skali integracji i przykłady zastosowań
