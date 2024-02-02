@@ -53,6 +53,11 @@ $$G\,[{\text{dB}}]=10\log {\frac {({I_{wy}}^{2}R_{wy})}{({I_{we}}^{2}R_{we})}}$$
 
 5. **Szumy i Zniekształcenia:** - Szumy to niepożądane zakłócenia dodawane przez wzmacniacz, a zniekształcenia to wszelkie odkształcenia sygnału wzmacnianego. Dobry wzmacniacz powinien minimalizować obie te efekty.
 
+6. **Moc wyjściowa**: mierzoną w watach (W);
+
+7. **współczynnik sprawności energetycznej** – definiowany jako stosunek mocy wydzielonej w obciążeniu do mocy pobieranej z zasilacza (%);
+
+
 ### Podstawowe Zastosowania:
 
 1. **Audio** - Wzmacniacze są szeroko stosowane w systemach audio, takich jak wzmacniacze mocy w odtwarzaczach audio, wzmacniacze słuchawkowe, itp.

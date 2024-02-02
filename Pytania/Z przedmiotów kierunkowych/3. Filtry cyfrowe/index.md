@@ -1,5 +1,7 @@
 # Filtry cyfrowe; rodzaje filtrów, specyfikacja własności filtrów, metody projektowania
 
+https://www.youtube.com/watch?v=Qmd685msY-Y&list=PLbqhA-NKGP6Afr_KbPUuy_yIBpPR4jzWo
+
 **Cyfrowy układ sekwencyjny**, który w reakcji na ciąg próbek **sygnału dyskretnego** podanego na wejście odpowiada ciągiem próbek wyjściowych, zgodnie z **deterministyczną funkcją przejścia** (zdarzeniu jednoznacznie przypisuje konkretny stan), która może być liniowa lub nieliniowa.
 
 W przypadku filtru liniowego jego właściwości całkowicie określa dyskretna odpowiedź impulsowa, a sygnał wyjściowy jest splotem dyskretnym sygnału wejściowego z tą odpowiedzią. W dziedzinie częstotliwości właściwości takiego filtru opisuje transmitancja.

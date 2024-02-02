@@ -1,104 +1,61 @@
-# Opisz relacje między prądami i napięciami na szeregowo połączonych elementach RLC. Przedstaw stany pracy
+# Obwody RLC
 
-### Równania dla Szeregowo Połączonych Elementów RLC:
+https://www.youtube.com/watch?v=DfHwsbwgPcE&ab_channel=CoachMAX
 
- Zapiszmy równania opisujące relacje między prądami ($I$) i napięciami ($V$) na tych elementach. Załóżmy, że źródło prądu przemiennego dostarcza sinusoidalny sygnał o częstotliwości $\omega$.
+1. **Prawo Ohma**
 
-### 1. Rezystor (R):
+    Zakładając, że prąd płynie od lewej do prawej strony rezystora, stosujemy prawo Ohma. Dla prądu stałego proporcjonoalność napięcia $V$ i natężenia $I$ wyraża się wzorem:
 
-Zakładając, że prąd płynie od lewej do prawej strony rezystora, stosujemy prawo Ohma. Dla prądu stałego proporcjonoalność napięcia $V$ i natężenia $I$ wyraża się wzorem:
+    $$V_R = I \cdot R$$
 
-$$V_R = I \cdot R$$
+2. **Pulsacja** 
 
-gdzie:
-- $R$ rezystancja
+    wielkość określająca, jak szybko powtarza się dane zjawisko okresowe; oznaczana małą literą omega (ω). Pulsacja jest powiązana z częstotliwością (f) i okresem (T) poprzez następującą zależność:
+    $$ \omega ={\frac {d\theta }{dt}}={\frac {2\pi }{T}}=2\pi f$$
 
-### 2. Kondensator (C):
+    gdzie: \
+    $\omega$ – pulsacja (wyrażana w radianach na sekundę), \
+    $\theta$ – faza ruchu drgającego (odpowiednik kąta w ruchu po okręgu), \
+    $2\pi$ – kąt pełny ($2\pi$ radianów = 360 stopni). 
 
-Prąd płynący przez kondensator zależy od szybkości zmiany napięcia na nim. Wyraża się to równaniem:
-
-$$I_C = C \cdot \frac{dV_C}{dt}$$
-
-gdzie:
-
-- $I_C$ to prąd płynący przez kondensator,
-- $C$ to pojemność kondensatora,
-- $\frac{dV_C}{dt}$ to szybkość zmiany napięcia na kondensatorze względem czasu.
-
-Napięcie na kondensatorze jest związane z ładunkiem ($Q$) i pojemnością ($C$) przez równanie 
-$$ 
-V_C = \frac{Q}{C} 
-$$
-
-### 3. Cewka (L):
-
-Napięcie na cewce zależy od szybkości zmiany prądu przez nią:
-
-$$
-\ V_L = L \cdot \frac{dI_L}{dt}\
-$$
-
-gdzie:
-
-- $V_L$ to napięcie na cewce,
-- $L$ to indukcyjność cewki,
-- $\frac{dI_L}{dt}$ to szybkość zmiany prądu przez cewkę względem czasu.
+3. **Oporność cewki (reaktancja indukcyjnościowa)**
 
 
-Prąd płynący przez cewkę jest związany z napięciem przez równanie 
-$$
-I_L = \frac{1}{L} \int V_L \, dt
-$$
+    $$X_{L}=\omega L$$
+    gdzie: \
+    $\omega$ – pulsacja prądu. \
+    $L$ - to indukcyjność cewki, henr [H],
 
-### Równanie Kirchhoffa:
 
-Zastosujmy pierwsze prawo Kirchhoffa dla napięć w szeregowym układzie RLC:
 
-$$
-\ V(t) = V_R + V_C + V_L\
-$$
 
-Podstawiając odpowiednie równania dla każdego elementu, otrzymujemy:
+4. **Oporność kondensatora (reaktancja pojemnościowa)**
 
-$$
-\ V(t) = I \cdot R + \frac{1}{C} \int I_C \, dt + L \cdot \frac{dI_L}{dt}\
-$$
+    $$X_{C}=-{\frac {1}{\omega C}}$$
+    gdzie: \
+    $\omega$ – pulsacja prądu. \
+    $C$– pojemność kondensatora, Farad [F],
 
-### Prawo Drugie Kirchhoffa dla Prądów:
+5. **Oporność obwodu (trójkąt impedancji)**
 
-Prawo drugie Kirchhoffa dla prądów mówi nam, że prąd w obwodzie jest stały. Dlatego prąd przez rezystor, kondensator i cewkę jest taki sam:
+<p align="center" style="margin: 20px 0 20px">
+<img src="image-1.png" style="max-height: 400px;"/>
+</p>
 
-$$
-\ I(t) = I_R = I_C = I_L\
-$$
+6. **Zjawisko rezonansu (częstotliwość rezonansowa)**
 
-### Szeregowy obwód rezonansowy RLC
+<p align="center" style="margin: 20px 0 20px">
+<img src="image-2.png" style="max-height: 400px;"/>
+</p>
+    f = czestotliwości graniczne 
 
-Impedancja szeregowo połączonych elementów rezystora ,R, kondensatora C i indukcyjności L jest sumą impedancji elementów obwodu:
-$$Z_{sr}=R-j{\frac {1}{\omega C}}+j\omega L=R+j\left(\omega L-{\frac {1}{\omega C}}\right),$$
-moduł impedancji:
-$$|Z_{sr}|={\sqrt {R^{2}+\left(\omega L-{\frac {1}{\omega C}}\right)^{2}}}.$$
-
-Impedancja osiąga minimum o wartości R przy częstości równej:
-$$\omega _{r}={\frac {1}{\sqrt {LC}}}.$$
-
-Przy tej częstości prąd płynący przez obwód przy danym przyłożonym napięciu osiągnie maksimum (zjawisko rezonansu).
 
 ### Stany Pracy:
 
-1. **Steady State (Stan Ustalony):**
+1. **Steady State (Stan Ustalony):** W stanie ustalonym układ RLC osiąga równowagę, a jego parametry, takie jak prądy i napięcia, stabilizują się. Dla sygnałów sinusoidalnych w stanie ustalonym, prądy i napięcia mogą być opisane w dziedzinie częstotliwości przy użyciu pojęcia impedancji, co pozwala na analizę częstotliwościową.
 
-   - W stanie ustalonym wszystkie prądy i napięcia w obwodzie osiągają stałe wartości.
+2. **Transient State (Stan Przejściowy):** W stanie początkowym układ RLC reaguje na zmiany warunków początkowych lub sygnały wejściowe. Jest to okres, w którym prądy i napięcia ewoluują zgodnie z równaniami różniczkowymi opisującymi układ. Dla stanu początkowego można analizować, jak szybko układ osiąga stan ustalony.
 
-2. **Transient State (Stan Przejściowy):**
+3. **Resonance (Rezonans):** Stan resonansu występuje, gdy częstotliwość sygnału wejściowego jest zbliżona do częstotliwości rezonansowej układu RLC. W tym stanie prądy i napięcia mogą osiągać maksymalne wartości, a układ wykazuje specyficzne właściwości rezonansowe.
 
-   - Stan, w którym prądy i napięcia zmieniają się dynamicznie po zmianie sygnału wejściowego lub w momencie włączania obwodu.
-
-3. **Resonance (Rezonans):**
-
-   - Występuje, gdy częstotliwość źródła jest równa częstotliwości rezonansowej układu. Może prowadzić do znacznego wzrostu amplitudy.
-
-4. **Damped Oscillations (Tłumione Oscylacje):**
-   - Jeśli obwód zawiera rezystor, to oscylacje mogą być tłumione, a amplituda maleje w czasie.
-
-Wartość rezystancji, indukcyjności, pojemności, częstotliwość źródła oraz warunki początkowe wpływają na charakterystykę szeregowego obwodu RLC. Analiza tego układu wymaga często użycia równań różniczkowych i uwzględnienia warunków początkowych.
+4. **Damped Oscillations (Tłumione Oscylacje):** Jeśli obwód zawiera rezystor, to oscylacje mogą być tłumione, a amplituda maleje w czasie.
