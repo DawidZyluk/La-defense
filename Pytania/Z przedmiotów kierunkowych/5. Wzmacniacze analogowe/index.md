@@ -6,10 +6,11 @@ https://www.youtube.com/watch?v=fmRHDqcodS4
 
 Wzmacniacze analogowe to urządzenia elektroniczne, które zwiększają amplitudę sygnału elektrycznego. Są one kluczowym elementem w elektronice, umożliwiając wzmacnianie sygnałów słabych do poziomów, które są bardziej przydatne do przetwarzania, sterowania lub dalszej transmisji. Istnieje wiele różnych rodzajów wzmacniaczy, a każdy z nich ma swoje unikalne właściwości i zastosowania.
 
-Wzmacniacz elektroniczny to urządzenie, które może zwiększyć wielkość sygnału (napięcia lub prądu zmiennego w czasie). Jest to dwuportowy obwód elektroniczny, który wykorzystuje energię elektryczną z zasilacza do zwiększania amplitudy (wielkości napięcia lub prądu) sygnału podawanego na wejście, wytwarzając proporcjonalnie większy sygnał amplitudy na wyjściu. Wzmacniacz definiuje się jako obwód, którego wzmocnienie mocy jest większe niż jeden. Wzmacniacz może być oddzielnym urządzeniem lub obwodem elektrycznym zawartym w innym urządzeniu. Wzmocnienie ma fundamentalne znaczenie dla współczesnej elektroniki, a wzmacniacze są szeroko stosowane w prawie każdym sprzęcie elektronicznym. Wzmacniacze można klasyfikować na różne sposoby. Jednym z nich jest częstotliwość wzmacnianego sygnału elektronicznego:
+Wzmacniacz elektroniczny to urządzenie, które może zwiększyć wielkość sygnału (napięcia lub natężenia). Jest to dwuportowy obwód elektroniczny, który wykorzystuje energię elektryczną z zasilacza do zwiększania amplitudy (wielkości napięcia lub prądu) sygnału podawanego na wejście, wytwarzając proporcjonalnie większy sygnał amplitudy na wyjściu. Wzmacniacz definiuje się jako obwód, którego wzmocnienie mocy jest większe niż jeden. Wzmacniacz może być oddzielnym urządzeniem lub obwodem elektrycznym zawartym w innym urządzeniu. Wzmocnienie ma fundamentalne znaczenie dla współczesnej elektroniki, a wzmacniacze są szeroko stosowane w prawie każdym sprzęcie elektronicznym. Wzmacniacze można klasyfikować na różne sposoby. Jednym z nich jest częstotliwość wzmacnianego sygnału elektronicznego:
+
+- **serwowzmacniacze i wzmacniacze pomiarowe** mogą pracować z bardzo niskimi częstotliwościami takimi jak prąd stały. 
 - **wzmacniacze audio** wzmacniają sygnały w zakresie audio (dźwięku) mniejszym niż 20 kHz, 
 - **wzmacniacze RF** wzmacniają częstotliwości w zakresie częstotliwości radiowych od 20 kHz do 300 GHz, 
-- **serwowzmacniacze i wzmacniacze pomiarowe** mogą pracować z bardzo niskimi częstotliwościami takimi jak prąd stały. 
  
 **Wzmocnienie mocy**
 

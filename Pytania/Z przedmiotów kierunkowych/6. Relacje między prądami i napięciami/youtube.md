@@ -1,4 +1,4 @@
-# Obwody RLC
+# Opisz relacje między prądami i napięciami na szeregowo połączonych elementach RLC. Przedstaw stany pracy
 
 https://www.youtube.com/watch?v=DfHwsbwgPcE&ab_channel=CoachMAX
 

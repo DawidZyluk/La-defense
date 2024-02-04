@@ -134,7 +134,7 @@ $(2^{8}).$ Rozdzielczość jest powiązana z Efektywną Liczbą Bitów (ENOB –
 4. **THD+N** (Współczynnik zawartości harmonicznych z ang. Total harmonic distortion) – stosunek wartości skutecznej wyższych harmonicznych sygnału, do wartości skutecznej składowej podstawowej. Współczynnik zawartości harmonicznych często podaje się w procentach.
 5. **Skala dynamiki D.R** (z ang.Dynamic Range) – wartość w $dB$ jako różnica największego i najmniejszego sygnału jaki przetwornik C/A jest w stanie wytworzyć. Wartość zależna od rozdzielczości przetwornika przykładowo dla CD-Audio 16 bitów wynosi maksymalnie $96,32959861$ ${\text{dB}}$ a można ją obliczyć w następujący sposób 
     $$D.R=20log(2^n)$$ 
-    gdzie $n$ – liczba bitów dla CD $20log(2^{16})=20log(65536)=20*4,8164799$
+    gdzie $n$ – liczba bitów dla CD $20 \log(2^{16})=20 \log(65536)=20*4,8164799$
 
 ### Zastosowanie 
 

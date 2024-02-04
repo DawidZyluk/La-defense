@@ -2,9 +2,19 @@
 
 https://www.youtube.com/watch?v=Qmd685msY-Y&list=PLbqhA-NKGP6Afr_KbPUuy_yIBpPR4jzWo
 
+W skrócie:
+
+1. Co to filtr?
+2. liniowy vs nieliniowy
+3. Odpowiedź impulsowa i sygnał Nyquista
+4. FIR i IIR
+5. Rzędy filtrów
+6. Charakterystyka fazowa
+7. Metody projektowania
+
 **Cyfrowy układ sekwencyjny**, który w reakcji na ciąg próbek **sygnału dyskretnego** podanego na wejście odpowiada ciągiem próbek wyjściowych, zgodnie z **deterministyczną funkcją przejścia** (zdarzeniu jednoznacznie przypisuje konkretny stan), która może być liniowa lub nieliniowa.
 
-W przypadku filtru liniowego jego właściwości całkowicie określa dyskretna odpowiedź impulsowa, a sygnał wyjściowy jest splotem dyskretnym sygnału wejściowego z tą odpowiedzią. W dziedzinie częstotliwości właściwości takiego filtru opisuje transmitancja.
+W przypadku filtru liniowego jego właściwości całkowicie określa dyskretna odpowiedź impulsowa, a sygnał wyjściowy jest splotem dyskretnym sygnału wejściowego z tą odpowiedzią. W dziedzinie częstotliwości właściwości takiego filtru opisuje **transmitancja**.
 
 Zachowanie dynamiczne filtru nieliniowego jest zazwyczaj bardziej skomplikowane, dlatego odpowiedź impulsowa takiego filtru nie opisuje wszystkich jego właściwości i nie wystarcza do przewidzenia reakcji filtru na dowolny sygnał wejściowy.
 
@@ -14,12 +24,13 @@ Odpowiedź impulsowa jest również używana do uzyskiwania charakterystyk filtr
 
 Częstotliwość Nyquista jest równa połowie częstotliwości próbkowania:
 
+$f_{N}=f_{s}/2$  albo  $f_{N}=1/{2T_{s}}$
+
 Filtry cyfrowe można podzielić na dwie grupy:
 
 - Filtry o skończonej odpowiedzi impulsowej (SOI, ang. finite impulse response – FIR)
 - Filtry o nieskończonej odpowiedzi impulsowej (NOI, ang. infinite impulse response – IIR)
 
-$f_{N}=f_{s}/2$  albo  $f_{N}=1/{2T_{s}}$
 
 ![Alt text](image-2.png)
 
@@ -29,8 +40,8 @@ $f_{N}=f_{s}/2$  albo  $f_{N}=1/{2T_{s}}$
 
 ### Charakterystyka fazowa
 
-![Alt text](image-1.png)
 ![Alt text](image-6.png)
+![Alt text](image-1.png)
 ![Alt text](image-7.png)
 
 ## Rodzaje filtrów
@@ -66,7 +77,7 @@ Te zalety spowodowały duże zainteresowanie filtrami IIR i burzliwy rozwój teo
 Do wad filtrów IIR należy zaliczyć:
 
 - Rekursywność filtru wprowadza potencjalne zagrożenie utraty stabilności (odpowiedź filtru w sposób niekontrolowany narasta do nieskończoności); niestabilność może mieć miejsce wtedy, gdy bieguny transmitancji (miejsca zerowe wielomianu w mianowniku) znajdą się poza okręgiem jednostkowym na płaszczyźnie zespolonej.
-- Projektowanie filtrów IIR jest znacznie trudniejsze niż w przypadku filtrów FIR – nie tylko ze względu na dodatkowy warunek zapewnienia stabilności.
+- ~~Projektowanie filtrów IIR jest znacznie trudniejsze niż w przypadku filtrów FIR – nie tylko ze względu na dodatkowy warunek zapewnienia stabilności.~~
 - Filtry IIR są znacznie bardziej wrażliwe na błędy zaokrągleń: zaokrąglenia wartości współczynników mogą znacząco zmienić charakterystykę, a zaokrąglenia wartości sygnału i wyników pośrednich wprowadzają szum, który może się akumulować.
 - Nie można ich zaimplementować jako filtrów o liniowej fazie, czyli takich, które wprowadzają takie samo opóźnienie grupowe dla wszystkich składowych częstotliwościowych przepuszczanego sygnału.
 - Z uwagi na rosnącą wydajność układów cyfrowych i procesorów sygnałowych, filtry IIR nie są obecnie tak chętnie wykorzystywane jak dawniej, a największą popularnością cieszą się filtry FIR, które nie mają wyżej wymienionych wad.

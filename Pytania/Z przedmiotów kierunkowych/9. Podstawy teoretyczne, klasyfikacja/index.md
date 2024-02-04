@@ -84,15 +84,13 @@
 
 4. **Analiza zużycia energii:** Współczesne układy cyfrowe muszą być efektywne energetycznie. Analiza zużycia energii obejmuje określenie, ile energii zużywa układ podczas różnych operacji i w różnych trybach pracy.
 
-**Synteza układów cyfrowych:**
+**Metody syntezy układów cyfrowych:**
 
 1. **Układy programowalne:** Umożliwia konfigurację układów za pomocą programowalnych układów logicznych (PLD) lub układów FPGA (Field-Programmable Gate Array). Programowanie tych układów pozwala na dostosowywanie ich funkcjonalności do konkretnych wymagań.
 
 2. **Języki opisu sprzętu (HDL):** Synteza HDL (Hardware Description Language) umożliwia opisanie funkcjonalności układu w formie programu, który może zostać przetworzony na fizyczny układ. Popularnymi językami HDL są VHDL i Verilog.
 
 3. **Automatyczne narzędzia projektowe:** Narzędzia CAD (Computer-Aided Design) pozwalają na automatyczne generowanie struktury układów cyfrowych na podstawie opisu funkcjonalnego. Te narzędzia potrafią optymalizować rozkład bramek logicznych, ścieżki sygnałowe i inne parametry układu.
-
-4. **Techniki optymalizacyjne:** W trakcie syntezy stosuje się różne techniki optymalizacyjne, takie jak minimalizacja liczby bramek logicznych, optymalizacja czasu propagacji sygnałów, czy minimalizacja zużycia energii.
 
 
 # Typowe układy o różniej skali integracji i przykłady zastosowań
